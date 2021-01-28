@@ -1,0 +1,138 @@
+.header-navbar {
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    padding: 20px 0px;
+    position: absolute;
+    background-color: #fff;
+
+    .navbar {
+        background-color: #fff;
+
+        .navbar-brand {
+            margin-right: 115px;
+        }
+
+        .navbar-nav {
+            .nav-item {
+                margin-right: 75px;
+
+                .nav-link {
+                    position: relative;
+                    color: #000000;
+                    font-weight: 700;
+
+                    &.hover::after {
+                        content: "";
+                        position: absolute;
+                        left: 35px;
+                        bottom: 0px;
+                        width: 0px;
+                        height: 5px;
+                        border-radius: 100%;
+                        background-color: $secondary-color;
+                        transition: 0.3s all ease-in-out;
+                        overflow: hidden;
+                    }
+
+                    &.hover:hover::after {
+                        width: 6px;
+                    }
+                }
+
+                &.has-children {
+                    position: relative;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        left: 9px;
+                        top: 36px;
+                        width: 0px;
+                        height: 5px;
+                        border-radius: 28%;
+                        background-color: $secondary-color;
+                        transition: 0.3s all linear;
+                    }
+
+                    &:hover::before {
+                        width: 23px;
+                    }
+
+                    &:after {
+                        content: '+';
+                        top: 6px;
+                        color: #ff5520;
+                        right: -6px;
+                        font-size: 18px;
+                        font-weight: 700;
+                        position: absolute;
+                        transition: 0.3s all ease-in-out;
+                    }
+
+                    .nav-submenu {
+                        display: none;
+                        position: absolute;
+                        list-style-type: none;
+                        padding-inline-start: 10px;
+                    }
+                }
+            }
+        }
+
+        .nav-actions {
+            position: relative;
+            display: flex;
+            align-items: center;
+            list-style-type: none;
+            margin-bottom: 0px;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                right: 31px;
+                bottom: 0;
+                width: 2px;
+                height: 18px;
+                transform: translateY(-56%);
+                background-color: #d9d9d9;
+            }
+
+            li:hover {
+                color: #0000fe;
+            }
+
+            .shopping-cart {
+                button {
+                    border: none;
+                    outline: none;
+                    background-color: transparent;
+                    margin: 0px 30px;
+
+                    i {
+                        font-size: 20px;
+                        color: $primary-color;
+                        transition: all .4s linear;
+
+                        &:hover {
+                            color: $secondary-color;
+                        }
+                    }
+                }
+            }
+
+            .login {
+                i {
+                    font-size: 20px;
+                    color: $primary-color;
+                    transition: all .4s linear;
+
+                    &:hover {
+                        color: $secondary-color;
+                    }
+                }
+            }
+        }
+    }
+}
