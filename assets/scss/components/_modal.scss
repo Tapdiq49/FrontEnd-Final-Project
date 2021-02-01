@@ -1,0 +1,140 @@
+.modal-dialog {
+    max-width: 570px;
+
+    .modal-content {
+        border: none;
+        overflow: hidden;
+        border-radius: 10px;
+
+        .modal-header {
+            padding: 30px 0px;
+            background: url(../img/lg-bg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            z-index: 1;
+            padding: 30px 0px;
+            position: relative !important;
+
+            .modal-login-head {
+                margin: 0 auto;
+                max-width: 310px;
+                text-align: center !important;
+
+                &::after {
+                    top: 0;
+                    left: 0;
+                    z-index: -1;
+                    width: 100%;
+                    content: "";
+                    height: 100%;
+                    position: absolute;
+                    background-color: rgba(0, 0, 255, 0.7);
+                }
+
+                .login-head {
+                    p {
+                        color: $white-color;
+                        font-size: 15px;
+                        padding-top: 15px;
+                    }
+                }
+            }
+        }
+
+        .modal-body {
+            padding: 50px;
+
+            .yl-faq-tab-btn {
+                padding-bottom: 30px;
+                text-align: center;
+
+                .faq-tab-btn-area {
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: center;
+
+                    .nav-item {
+                        border: 1px solid #e5e5e5;
+
+                        &.left-radius {
+                            border-bottom-left-radius: 30px;
+                            border-top-left-radius: 30px;
+                        }
+
+                        &.right-radius {
+                            border-top-right-radius: 30px;
+                            border-bottom-right-radius: 30px;
+                        }
+
+                        .nav-link {
+                            color: $title-color;
+                            font-size: 15px;
+                            font-weight: 700;
+                            padding: 10px 40px;
+
+                            &.active {
+                                color: $white-color;
+                                background-color: $secondary-color !important;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .yl-login-content,
+            .yl-sign-up-content {
+                max-width: 370px;
+                margin: 0 auto;
+
+                input {
+                    width: 100%;
+                    height: 50px;
+                    border: none;
+                    outline: none;
+                    padding-left: 20px;
+                    margin-bottom: 20px;
+                    border-radius: 10px;
+                    background-color: #efeff0;
+                }
+
+                .yl-login-label {
+                    display: flex;
+                    justify-content: space-between;
+                    color: $primary-color;
+
+                    input {
+                        width: 15px;
+                        height: 15px;
+                        margin-right: 12px;
+                    }
+
+                    a {
+                        color: $title-color;
+                        font-weight: 700;
+                    }
+                }
+
+                button {
+                    color: $white-color;
+                    width: 100%;
+                    height: 50px;
+                    border: none;
+                    font-weight: 700;
+                    border-radius: 10px;
+                    margin-bottom: 15px;
+                    background-color: $secondary-color;
+                }
+
+                p {
+                    color: $primary-color;
+
+                    a {
+                        color: $title-color;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}

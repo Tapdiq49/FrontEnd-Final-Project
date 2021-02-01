@@ -1,0 +1,99 @@
+#select-section {
+    top: -175px;
+    z-index: 1;
+    position: relative;
+    margin-bottom: -175px;
+}
+
+.search-form {
+    position: relative;
+    background-color: $white-color;
+    border-radius: 10px;
+    padding: 20px 20px 12px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, .1);
+
+    .search-circle1 {
+        position: absolute !important;
+        top: -70px;
+        left: -33px;
+        z-index: -1;
+    }
+
+    .search-circle2 {
+        position: absolute;
+        bottom: -70px;
+        right: -70px;
+        z-index: -1;
+    }
+
+    .select-option-wrap {
+        margin-top: 5px;
+
+        .select-option {
+            display: flex;
+            position: relative;
+
+            .form-select {
+                width: 165px;
+                border: none;
+                box-shadow: none;
+                background: none;
+                position: relative;
+                cursor: pointer;
+                color: #000;
+                border: none;
+                height: auto;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: auto;
+                font-family: $secondary-font;
+            }
+
+            button {
+                position: relative;
+                color: $white-color;
+                height: 45px;
+                width: 160px;
+                border: none;
+                font-weight: 700;
+                border-radius: 5px;
+                overflow: hidden;
+                background-color: $secondary-color;
+                outline: none;
+                z-index: 1;
+                &::after {
+                    top: 0;
+                    width: 0;
+                    left: -40%;
+                    content: "";
+                    z-index: -1;
+                    height: 100%;
+                    position: absolute;
+                    transform: skew(50deg);
+                    transition-duration: 0.6s;
+                    transform-origin: top left;
+                    background-color: $red-color;
+                }
+
+                &:hover::after {
+                    height: 100%;
+                    width: 150%;
+                }
+            }
+        }
+    }
+}
+
+.apply-now {
+    margin-top: 20px;
+    color: $title-color;
+    font-size: 15px;
+    position: relative;
+
+    a {
+        font-weight: 700;
+        margin-left: 8px;
+        color: $secondary-color;
+        text-decoration: underline;
+    }
+}

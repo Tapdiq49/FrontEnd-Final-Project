@@ -1,0 +1,264 @@
+#footer {
+    background: url(../img/f-bg.jpg);
+}
+
+.content-wrap {
+    padding-top: 80px;
+
+    h3 {
+        color: $white-color;
+        font-size: 24px;
+        font-weight: 700;
+        position: relative;
+        margin-bottom: 25px;
+
+        &::before {
+            left: 0;
+            height: 3px;
+            width: 30px;
+            content: "";
+            bottom: -12px;
+            position: absolute;
+            background-color: $red-color;
+        }
+    }
+
+    p {
+        color: #9d9d9d;
+        padding-bottom: 20px;
+    }
+
+    .footer-logo {
+        padding-bottom: 18px;
+
+        a {
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .footer-btn {
+        position: relative;
+        color: $white-color;
+        height: 35px;
+        width: 100px;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 35px;
+        overflow: hidden;
+        display: inline-block;
+        transition: 0.3s all linear;
+        border-radius: 30px;
+        background-color: $red-color;
+        text-transform: uppercase;
+        text-align: center;
+        z-index: 1;
+
+        &:hover {
+            color: $title-color;
+        }
+
+        &::after {
+            top: 0;
+            width: 0;
+            left: -40%;
+            content: "";
+            height: 100%;
+            position: absolute;
+            transform: skew(50deg);
+            transition-duration: 0.6s;
+            transform-origin: top left;
+            background-color: $white-color;
+        }
+
+        &:hover::after {
+            height: 100%;
+            width: 150%;
+            z-index: -1;
+        }
+    }
+
+    &.newsletter {
+        form {
+            margin-top: 30px;
+            position: relative;
+
+            input {
+                height: 45px;
+                width: 100%;
+                padding-left: 20px;
+                border: 2px solid #313131;
+                background-color: transparent;
+                color: #9d9d9d;
+                outline: none;
+            }
+
+            button {
+                top: 0;
+                right: 0;
+                width: 60px;
+                padding: 0;
+                color: $white-color;
+                height: 45px;
+                border: none;
+                position: absolute;
+                background-color: #e3002a;
+                transition: all 0.3s ease-in-out;
+
+                i {
+                    transition: all 0.3s ease-in-out;
+                }
+
+                &:hover i {
+                    color: $title-color;
+                }
+            }
+        }
+
+        .footer-social {
+            margin-top: 22px;
+
+            ul {
+                display: flex;
+                padding-left: 0;
+
+                li {
+                    margin-right: 15px;
+                    list-style: none;
+
+                    a {
+                        transition: all .4s linear;
+                    }
+
+                    &:hover a {
+                        color: $red-color;
+                    }
+                }
+            }
+        }
+    }
+
+    &.official-info {
+        ul {
+            padding-top: 15px;
+            list-style: none;
+            padding-left: 0;
+
+            li {
+                display: flex;
+                margin-bottom: 5px;
+
+                i {
+                    margin-right: 10px;
+                    margin-top: 5px;
+                    color: #ff5520;
+                }
+
+                a {
+                    color: #9d9d9d;
+                    display: block;
+                    font-size: 14px;
+                    overflow: hidden;
+                    max-width: 170px;
+                }
+            }
+        }
+
+        .open-hour {
+            margin-top: 10px;
+
+            span {
+                color: $white-color;
+                font-size: 14px;
+                display: block;
+                margin-bottom: 10px;
+                font-weight: 700;
+                text-decoration: underline;
+            }
+
+            p {
+                font-size: 14px;
+                color: #9d9d9d;
+                max-width: 180px;
+            }
+        }
+    }
+
+    &.instagram {
+        .insta-feed {
+            padding-top: 10px;
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                list-style: none;
+                padding-left: 0;
+
+                li {
+                    width: 75px;
+                    height: 75px;
+                    margin-right: 10px;
+                    margin-bottom: 7px;
+                    position: relative;
+                    background-color: $title-color;
+                    transition: 0.3s all ease-in-out;
+                    cursor: pointer;
+
+                    &::before {
+                        top: 0;
+                        opacity: 0;
+                        content: "";
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        background-color: $title-color;
+                        transition: 0.3s all ease-in-out;
+                        z-index: 1;
+                    }
+
+                    &:hover::before {
+                        opacity: 0.7;
+                    }
+
+                    a {
+                        outline: none;
+                        box-shadow: none;
+                        text-decoration: none;
+                        color: inherit;
+                        position: relative;
+                        img{
+                            max-width: 100%;
+                        }
+                        i {
+                            left: 0;
+                            top: 50%;
+                            right: 0;
+                            opacity: 0;
+                            color: $white-color;
+                            position: absolute;
+                            text-align: center;
+                            transform: translateY(-50%);
+                            transition: 0.3s all ease-in-out;
+                            z-index: 2;
+                        }
+                    }
+                    &:hover i{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+.copyright{
+    padding: 25px 0px;
+    text-align: center;
+    border-top: 1px solid #9d9d9d;
+    span{
+        font-size: 15px;
+        color: $white-color;
+        text-align: center;
+    }
+}

@@ -5,45 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://kit.fontawesome.com/18576e4dba.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.min.css">
     <title>Education 1</title>
 </head>
 
 <body>
+    <!-- Start of header -->
     <header class="header-navbar">
         <nav class="navbar navbar-expand-lg navbar-light ">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="assets/img/logos/logo1.png" alt="">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-menus">
+                    <span class="close-button d-md-none">X</span>
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item has-children">
+                        <li class="nav-item has-children plus">
                             <a class="nav-link hover" href="#">
                                 Home
                             </a>
-                            <ul class="nav-submenu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                            </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                        <li class="nav-item has-children plus">
+                            <a class="nav-link hover" href="#">About</a>
                         </li>
                         <li class="nav-item has-children">
                             <a class="nav-link hover" href="#">
                                 Course
                             </a>
                             <ul class="nav-submenu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
+                                <li><a href="#">Course</a></li>
+                                <li><a href="#">Course Details</a></li>
                             </ul>
                         </li>
                         <li class="nav-item has-children">
@@ -51,9 +48,12 @@
                                 Pages
                             </a>
                             <ul class="nav-submenu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
+                                <li><a href="#">Gallery</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Event</a></li>
+                                <li><a href="#">Event Details</a></li>
+                                <li><a href="#">Faq</a></li>
+                                <li><a href="#">404</a></li>
                             </ul>
                         </li>
                         <li class="nav-item has-children">
@@ -61,9 +61,10 @@
                                 Blog
                             </a>
                             <ul class="nav-submenu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
+                                <li><a href="#">Blog 1</a></li>
+                                <li><a href="#">Blog 2</a></li>
+                                <li><a href="#">Blog Details 1</a></li>
+                                <li><a href="#">Blog Details 2</a></li>
                             </ul>
                         </li>
                         <li class="nav-item has-children">
@@ -71,9 +72,8 @@
                                 Instructor
                             </a>
                             <ul class="nav-submenu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
+                                <li><a href="#">Instructor</a></li>
+                                <li><a href="#">Instructor Details</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -81,27 +81,265 @@
                         <li class="shopping-cart">
                             <button><i class="icon-shopping-cart"></i></button>
                         </li>
-                        <li class="login">
+                        <li class="login" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <a href="#">
                                 <i class="icon-user"></i>
                             </a>
                         </li>
                     </ul>
                 </div>
+                <div class="nav-overlay-panel"></div>
             </div>
         </nav>
     </header>
-
+    <!-- End of header -->
     <main>
+        <!-- Start of intro section -->
+        <section id="intro">
+            <span class="square square-1"></span>
+            <span class="square square-2"></span>
+            <span class="square square-3"></span>
+            <span class="square square-4"></span>
+            <div class="content">
+                <div class="intro-img">
+                    <img src="assets/img/banner.png" alt="">
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7 col-sm-12">
+                            <div class="intro-text">
+                                <div class="banner-tag">
+                                    <span>During COVID-19</span>
+                                    <p>We emphasize on health &amp; sanitise issues</p>
+                                </div>
+                                <h1 class="cd-headline letters scale">Gathering the brightest
+                                    minds for a
+                                    <span class="cd-words-wrapper">
+                                        <b class="is-visible" style="opacity: 1;">better-world.</b>
+                                        <b> Helping-Hand.</b>
+                                        <b> Make-Idea.</b>
+                                    </span>
+                                </h1>
+                                <p>Collaborate Consulting exists to find the place where to
+                                    being seemingly disparate interests meet. This undergraduate course teaches students
+                                    what it was like.
+                                </p>
+                                <div class="intro-btn clearfix">
+                                    <div class="course-btn">
+                                        <a href="#">All Courses <i class="icon-arrow-right"></i></a>
+                                    </div>
+                                    <div class="play-btn">
+                                        <a class="video-box" href="https://www.youtube.com/watch?v=gUYjYEGbxEY">
+                                            <i class="icon-play"></i>
+                                            <span class="border-btn wrap-1"></span>
+                                            <span class="border-btn wrap-2"></span>
+                                            <span class="border-btn wrap-3"></span>
+                                        </a>
+                                    </div>
+                                    <div class="yle">Yle</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of intro section -->
 
+        <!-- Start of search section -->
+        <section id="select-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-sm-12">
+                        <div class="search-form">
+                            <span class="search-circle1">
+                                <img src="assets/img/cr-shape1.png" alt="">
+                            </span>
+                            <span class="search-circle2">
+                                <img src="assets/img/cr-shape2.png" alt="">
+                            </span>
+                            <form action="#">
+                                <div class="select-option-wrap">
+                                    <div class="select-option">
+                                        <select class="form-select " ">
+                                            <option selected>Course Type</option>
+                                            <option value=" 1">Weekly</option>
+                                            <option value="2">Monthly</option>
+                                            <option value="3">Yearly</option>
+                                        </select>
+                                        <select class="form-select form-select-lg" aria-label=".form-select-lg ">
+                                            <option selected>Language</option>
+                                            <option value="1">English</option>
+                                            <option value="2">German</option>
+                                            <option value="3">Spanish</option>
+                                        </select>
+
+                                        <select class="form-select form-select-lg" aria-label=".form-select-lg ">
+                                            <option selected>Skill</option>
+                                            <option value="1">Developer</option>
+                                            <option value="2">Designer</option>
+                                            <option value="3">Marketer</option>
+                                        </select>
+                                        <button type="submit"><i class="icon-search"></i> Search</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="apply-now">
+                            <p>Are you qualified to teach our Students? <a href="#">Apply Now</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of search section -->
     </main>
 
-    <footer>
-
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="content-wrap">
+                        <div class="footer-logo">
+                            <a href="#">
+                                <img src="assets/img/logos/logo5.png" alt="">
+                            </a>
+                        </div>
+                        <p>We work with a passion of taking challenges and creating new ones in advertising sector.</p>
+                        <a class="footer-btn" href="#">About us</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="content-wrap newsletter">
+                        <h3 class="">Newsletter</h3>
+                        <p>Subscribe our newsletter to get our latest update &amp; news </p>
+                        <form action="#">
+                            <input type="email" placeholder="Your mail address">
+                            <button type="submit"><i class="icon-paper-plane"></i></button>
+                        </form>
+                        <div class="footer-social">
+                            <ul>
+                                <li><a href="#"><i class="icon-facebook"></i></a></li>
+                                <li><a href="#"><i class="icon-twitter"></i></a></li>
+                                <li><a href="#"><i class="icon-behance"></i></a></li>
+                                <li><a href="#"><i class="icon-youtube-play"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="content-wrap official-info">
+                        <h3>Official info:</h3>
+                        <ul>
+                            <li>
+                                <i class="icon-map-marker"></i>
+                                <a href="#">30 Commercial Road Fratton, Australia</a>
+                            </li>
+                            <li>
+                                <i class="icon-phone"></i><a href="#">1-888-452-1505</a>
+                            </li>
+                        </ul>
+                        <div class="open-hour">
+                            <span>Open Hours: </span>
+                            <p>Mon - Sat: 8 am - 5 pm, Sunday: CLOSED </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="content-wrap instagram">
+                        <h3>Instagram</h3>
+                        <div class="insta-feed">
+                            <ul>
+                               <li><a href="#"><img src="assets/img/instagram/ins1.jpg" alt=""><i class="fab fa-instagram"></i></a></li>
+                               <li><a href="#"><img src="assets/img/instagram/ins2.jpg" alt=""><i class="fab fa-instagram"></i></a></li>
+                               <li><a href="#"><img src="assets/img/instagram/ins3.jpg" alt=""><i class="fab fa-instagram"></i></a></li>
+                               <li><a href="#"><img src="assets/img/instagram/ins4.jpg" alt=""><i class="fab fa-instagram"></i></a></li>
+                               <li><a href="#"><img src="assets/img/instagram/ins5.jpg" alt=""><i class="fab fa-instagram"></i></a></li>
+                               <li><a href="#"><img src="assets/img/instagram/ins6.jpg" alt=""><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                         </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <span>© 2021 Yle - Education. All rights reserved.</span>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <div class="modal yl-login-modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header position-relative" data-background="assets/img/banner/lg-bg.jpg">
+                    <div class="modal-login-head" id="exampleModalLabel">
+                        <div class="login-head text-center pera-content">
+                            <a href="#"><img src="assets/img/logos/logo4.png" alt=""></a>
+                            <p>Boamco laboris nisi ut aliquip ex ea commodo conseq nderit in voluptate velit esse</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="yl-modal-signup-login-tab">
+                        <div class="yl-faq-tab-btn ul-li">
+                            <ul id="tabs" class="nav text-center faq-tab-btn-area">
+                                <li class="nav-item left-radius">
+                                    <a href="#" data-target="#login" data-toggle="tab"
+                                        class="nav-link text-capitalize active show">Login</a>
+                                </li>
+                                <li class="nav-item right-radius">
+                                    <a href="#" data-target="#signUp" data-toggle="tab"
+                                        class="nav-link text-capitalize">Sign Up</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="tabsContent" class="tab-content">
+                            <div id="login" class="tab-pane fade active show">
+                                <div class="yl-login-content pera-content text-center">
+                                    <form action="#" method="post">
+                                        <input type="text" placeholder="Username or email">
+                                        <input type="text" placeholder="Password">
+                                        <div class="yl-login-label">
+                                            <label for="form">
+                                                <input type="checkbox" id="form">Remember me
+                                            </label>
+                                            <a href="#">Forget Password?</a>
+                                        </div>
+                                        <button type="submit">Submit</button>
+                                    </form>
+                                    <p>Don’t have any account? <a href="#">Signup</a></p>
+                                </div>
+                            </div>
+                            <div id="signUp" class="tab-pane fade">
+                                <div class="yl-sign-up-content pera-content text-center">
+                                    <form action="#" method="post">
+                                        <input type="text" placeholder="First Name">
+                                        <input type="text" placeholder="Last Name">
+                                        <input type="email" placeholder="Email address">
+                                        <input type="text" placeholder="Username">
+                                        <input type="text" placeholder="Password">
+                                        <input type="text" placeholder="Confirm password">
+                                        <div class="yl-login-label">
+                                            <span><input type="checkbox">By clicking signup you are agree to our terms
+                                                of service</span>
+                                        </div>
+                                        <button type="submit">Submit</button>
+                                    </form>
+                                    <p>Already have an account? <a href="#">Log in</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a id="back2Top" class="top-scroll" title="Back to top" href="#"><i class="icon-chevron-up"></i></a>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="assets/js/typer.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 

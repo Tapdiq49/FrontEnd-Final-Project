@@ -2,12 +2,17 @@
     top: 0;
     z-index: 10;
     width: 100%;
-    padding: 20px 0px;
     position: absolute;
-    background-color: #fff;
+    background-color: $white-color;
 
     .navbar {
-        background-color: #fff;
+        background-color: $white-color;
+
+        .navbar-menus {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
 
         .navbar-brand {
             margin-right: 115px;
@@ -19,7 +24,7 @@
 
                 .nav-link {
                     position: relative;
-                    color: #000000;
+                    color: $title-color;
                     font-weight: 700;
 
                     &.hover::after {
@@ -62,7 +67,7 @@
                     &:after {
                         content: '+';
                         top: 6px;
-                        color: #ff5520;
+                        color: $red-color;
                         right: -6px;
                         font-size: 18px;
                         font-weight: 700;
@@ -71,10 +76,63 @@
                     }
 
                     .nav-submenu {
-                        display: none;
+                        top: 65px;
+                        left: 0;
+                        opacity: 0;
+                        z-index: 2;
+                        margin: 0px;
+                        padding: 0px;
+                        height: auto;
+                        width: 200px;
+                        border: none;
+                        display: block;
+                        border-radius: 0;
+                        overflow: hidden;
+                        visibility: hidden;
                         position: absolute;
-                        list-style-type: none;
-                        padding-inline-start: 10px;
+                        background-color: $white-color;
+                        transition: all 0.4s ease-in-out;
+                        border-bottom: 2px solid $secondary-color;
+                        box-shadow: 0 5px 10px 0 rgba(83, 82, 82, .1);
+
+                        li {
+                            position: relative;
+                            width: 100%;
+                            margin-left: 0;
+                            border-bottom: 1px solid #e5e5e5;
+                            list-style: none;
+                            display: inline-block;
+
+                            a {
+                                width: 100%;
+                                color: #343434;
+                                display: block;
+                                font-size: 14px;
+                                padding: 10px 25px;
+                                position: relative;
+                                transition: 0.3s all ease-in-out;
+                                font-weight: 700;
+                            }
+
+                            &:hover a {
+                                color: $white-color;
+                                background-color: $secondary-color;
+                            }
+
+                        }
+
+                    }
+
+                    &:hover .nav-submenu {
+                        top: 48px;
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+
+                &.plus {
+                    &::after {
+                        content: '' !important;
                     }
                 }
             }
@@ -100,7 +158,7 @@
             }
 
             li:hover {
-                color: #0000fe;
+                color: $secondary-color;
             }
 
             .shopping-cart {
@@ -134,5 +192,35 @@
                 }
             }
         }
+
+        &.header-fixed {
+            box-shadow: 0 5px 30px rgba(0, 22, 8, 0.1);
+            -webkit-box-shadow: 0 5px 30px rgba(0, 22, 84, 0.1);
+            background: $white-color;
+            position: fixed;
+            z-index: 999;
+            width: 100%;
+            top: 0;
+            transition: 0.2s ease-in;
+            animation-duration: 0.5s;
+            animation-name: slideInDown;
+        }
     }
+}
+
+.nav-overlay-panel {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: none;
+    z-index: 19999;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+nav{
+    @include media("retina", "<minWidth") {
+        color: white;
+      };
 }

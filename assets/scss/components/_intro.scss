@@ -1,0 +1,319 @@
+@keyframes animationFramesOne {
+    0% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+
+    20% {
+        transform: translate(73px, -1px) rotate(36deg);
+    }
+
+    40% {
+        transform: translate(111px, 72px) rotate(72deg);
+    }
+
+    60% {
+        transform: translate(93px, 122px) rotate(108deg);
+    }
+
+    80% {
+        transform: translate(-70px, 72px) rotate(124deg);
+    }
+
+    100% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+}
+
+@keyframes animationFramesTwo {
+    0% {
+        transform: translate(0px, 0px) rotate(0deg) scale(1);
+    }
+
+    20% {
+        transform: translate(73px, -1px) rotate(36deg) scale(0.9);
+    }
+
+    40% {
+        transform: translate(141px, 72px) rotate(72deg) scale(1);
+    }
+
+    60% {
+        transform: translate(83px, 122px) rotate(108deg) scale(1.2);
+    }
+
+    80% {
+        transform: translate(-40px, 72px) rotate(104deg) scale(1.1);
+    }
+
+    100% {
+        transform: translate(0px, 0px) rotate(0deg) scale(1);
+    }
+}
+
+@keyframes scale-up {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    60% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes scale-down {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    60% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+@keyframes border_animation {
+    0% {
+        transform: scale(1);
+        opacity: 0;
+    }
+
+    20% {
+        transform: scale(1.24);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(2.1);
+        opacity: 0;
+    }
+}
+
+#intro {
+    padding-bottom: 132px;
+
+    .square {
+        position: absolute !important;
+        z-index: 1;
+
+        &.square-1 {
+            width: 7px;
+            height: 7px;
+            top: 200px;
+            left: 150px;
+            background-color: #00a4ff;
+            box-shadow: 0px 6px 13px 0px rgba(0, 0, 254, .2);
+            animation: animationFramesOne 12s infinite alternate;
+        }
+
+        &.square-2 {
+            top: 150px;
+            left: 25%;
+            width: 10px;
+            height: 10px;
+            background-color: $title-color;
+            box-shadow: 0px 6px 13px 0px rgba(0, 0, 0, .2);
+            animation: animationFramesTwo 18s infinite alternate;
+        }
+
+        &.square-3 {
+            bottom: 150px;
+            left: 150px;
+            width: 10px;
+            height: 10px;
+            background-color: $red-color;
+            box-shadow: 0px 6px 13px 0px rgba(255, 85, 32, .2);
+            animation: animationFramesOne 12s infinite alternate;
+        }
+
+        &.square-4 {
+            width: 10px;
+            height: 10px;
+            right: 50%;
+            bottom: 200px;
+            background-color: $secondary-color;
+            box-shadow: 0px 6px 13px 0px rgba(0, 0, 254, .2);
+            animation: animationFramesTwo 18s infinite alternate;
+        }
+    }
+
+    .content {
+        position: relative !important;
+        background-color: #f7f7f7;
+
+        .intro-img {
+            position: absolute;
+            top: 77px;
+            right: -140px;
+            overflow: hidden;
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        .intro-text {
+            z-index: 2 !important;
+            max-width: 690px;
+            overflow: hidden;
+            padding: 230px 0px 180px;
+
+            .banner-tag {
+                padding-right: 30px;
+                border-radius: 40px;
+                display: inline-block;
+                margin-bottom: 45px;
+                background-color: #efeff0;
+                position: relative;
+                z-index: 2;
+
+                span {
+                    color: #fff;
+                    font-weight: 500;
+                    padding: 12px 30px;
+                    margin-right: 10px;
+                    border-radius: 40px;
+                    display: inline-block;
+                    background-color: $secondary-color;
+                }
+
+                p {
+                    color: $title-color;
+                    font-size: 16px;
+                    font-weight: 600;
+                    padding-bottom: 0;
+                    display: inline-block;
+                }
+            }
+
+            .cd-headline {
+                color: $title-color;
+                font-size: 58px;
+                font-weight: 700;
+                line-height: 1.2;
+                padding-bottom: 35px;
+
+                .cd-words-wrapper {
+                    color: $secondary-color;
+                    position: relative;
+                    left: 15px;
+
+                    b {
+                        display: inline-block;
+                        position: absolute;
+                        white-space: nowrap;
+                        left: 0;
+                        top: 0;
+                        font-weight: 700;
+
+                        &.scale {
+                            opacity: 0;
+                        }
+
+                        i {
+                            display: inline-block;
+                            opacity: 0;
+                            transform: scale(0);
+                            font-style: normal;
+
+                            &.in {
+                                animation: scale-up 0.6s forwards;
+                            }
+
+                            &.out {
+                                animation: scale-down 0.6s forwards;
+                                visibility: hidden;
+                            }
+                        }
+
+
+                    }
+                }
+            }
+
+            p {
+                color: #4f4f4f;
+                font-size: 20px;
+                line-height: 1.6;
+                padding-bottom: 40px;
+            }
+
+            .intro-btn {
+                display: flex;
+
+                .course-btn {
+                    z-index: 2;
+                    margin-right: 35px;
+                }
+
+                .play-btn {
+                    width: 50px;
+                    height: 50px;
+                    line-height: 50px;
+                    border-radius: 100%;
+                    transition: 0.3s all ease-in-out;
+                    background-color: $secondary-color;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    z-index: 2;
+                    a {
+                        position: relative;
+                        color: $white-color;
+
+                        i {
+                            font-size: 20px;
+                        }
+
+                        .border-btn {
+                            border: 2px solid rgba(0, 0, 0, 0.15);
+                            top: 0;
+                            left: -15px;
+                            opacity: 0;
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 60px;
+                            position: absolute;
+                            animation-play-state: running;
+                            animation: border_animation 3.9s linear 0s infinite;
+
+                            &.wrap-2 {
+                                animation-delay: 1.3s;
+                            }
+
+                            &.wrap-3 {
+                                animation-delay: 2.6s;
+                            }
+
+                        }
+                    }
+
+                    &:hover {
+                        background-color: #e3002a;
+                    }
+                }
+
+                .yle {
+                    bottom: -28px;
+                    opacity: 0.05;
+                    line-height: 1;
+                    color: #00003d;
+                    font-weight: 700;
+                    font-size: 265px;
+                    position: absolute;
+                    font-family: $secondary-font;
+                    z-index: 1;
+                }
+            }
+        }
+    }
+}

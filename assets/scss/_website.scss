@@ -12,3 +12,54 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
+.course-btn {
+    a {
+        position: relative;
+        color: #fff;
+        width: 160px;
+        height: 55px;
+        display: block;
+        overflow: hidden;
+        font-weight: 700;
+        line-height: 55px;
+        border-radius: 40px;
+        background-color: $red-color;
+        text-align: center;
+        z-index: 1;
+        &::after {
+            top: 0;
+            width: 0;
+            left: -40%;
+            content: "";
+            z-index: -1;
+            height: 100%;
+            position: absolute;
+            transform: skew(50deg);
+            transition-duration: 0.6s;
+            transform-origin: top left;
+            background-color: $secondary-color;
+        }
+
+        &:hover::after {
+            height: 100%;
+            width: 150%;
+        }
+    }
+}
+
+#back2Top {
+    width: 45px;
+    right: 15px;
+    z-index: 5;
+    height: 45px;
+    bottom: 20px;
+    display: none;
+    position: fixed;
+    line-height: 45px;
+    background-color: #e3002a;
+    text-align: center;
+    i{
+        color: #fff;
+    }
+}
