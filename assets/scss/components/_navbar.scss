@@ -1,5 +1,3 @@
-@import '../mixins';
-
 .header-navbar {
     top: 0;
     z-index: 10;
@@ -13,7 +11,7 @@
         .navbar-menus {
             display: flex;
             align-items: center;
-            width: 100%;
+            width: 80%;
 
             .m-brand-logo {
                 width: 160px;
@@ -24,12 +22,12 @@
         }
 
         .navbar-brand {
-            margin-right: 115px;
+            margin-right: 40px;
         }
 
         .navbar-nav {
             .nav-item {
-                margin-right: 75px;
+                margin-right: 45px;
 
                 .nav-link {
                     position: relative;
@@ -229,18 +227,17 @@
     z-index: 1;
 }
 
-@include media("retina", "<minWidth") {
+$breakpoint-tablet: 1000px;
+
+@media (max-width: $breakpoint-tablet) {
     .navbar {
         z-index: 2;
 
         .navbar-toggler {
-            right: 0;
-            top: 5px;
             z-index: 5;
             cursor: pointer;
             font-size: 30px;
             line-height: 40px;
-            position: absolute;
             text-align: center;
             color: #e3002a;
             border-color: transparent;
@@ -251,7 +248,7 @@
             flex-direction: column;
             top: 0px;
             bottom: 0;
-            transform: translateX(100%);
+            transform: translateX(125%);
             height: 100vh;
             z-index: 101;
             position: fixed;
@@ -286,6 +283,7 @@
                 display: flex;
                 flex-direction: column;
                 width: 55%;
+
                 .nav-item {
                     width: 100%;
                     position: relative;
@@ -303,7 +301,7 @@
 
                     &.has-children {
                         .nav-link {
-                            &:hover::after{
+                            &:hover::after {
                                 width: 0;
                             }
                         }
@@ -316,7 +314,8 @@
                             top: 11px;
                             color: #555;
                         }
-                        &:hover::before{
+
+                        &:hover::before {
                             width: 0;
                         }
                     }

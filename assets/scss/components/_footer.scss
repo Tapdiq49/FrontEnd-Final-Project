@@ -1,4 +1,3 @@
-@import '../mixins';
 #footer {
     background: url(../img/f-bg.jpg);
 }
@@ -263,8 +262,8 @@
         text-align: center;
     }
 }
-
-@include media("retina", "<minWidth") {
+$breakpoint-tablet: 768px;
+@media (max-width: $breakpoint-tablet) {
     #footer{
         .content-wrap{
             text-align: center;
