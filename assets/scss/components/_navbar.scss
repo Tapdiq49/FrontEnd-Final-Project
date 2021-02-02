@@ -1,3 +1,5 @@
+@import '../mixins';
+
 .header-navbar {
     top: 0;
     z-index: 10;
@@ -12,6 +14,13 @@
             display: flex;
             align-items: center;
             width: 100%;
+
+            .m-brand-logo {
+                width: 160px;
+                margin: 0 auto;
+                margin-bottom: 30px;
+                display: none;
+            }
         }
 
         .navbar-brand {
@@ -216,5 +225,107 @@
     position: fixed;
     display: none;
     z-index: 19999;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1;
+}
+
+@include media("retina", "<minWidth") {
+    .navbar {
+        z-index: 2;
+
+        .navbar-toggler {
+            right: 0;
+            top: 5px;
+            z-index: 5;
+            cursor: pointer;
+            font-size: 30px;
+            line-height: 40px;
+            position: absolute;
+            text-align: center;
+            color: #e3002a;
+            border-color: transparent;
+            box-shadow: transparent;
+        }
+
+        .navbar-menus {
+            flex-direction: column;
+            top: 0px;
+            bottom: 0;
+            transform: translateX(100%);
+            height: 100vh;
+            z-index: 101;
+            position: fixed;
+            width: 310px;
+            overflow-y: scroll;
+            background-color: #000;
+            padding: 50px 35px 35px 35px;
+            box-shadow: 0px 3px 5px rgba(100, 100, 100, 0.69);
+            transition: all 0.5s ease-in;
+
+            &.show {
+                transform: translateX(30%);
+            }
+
+            .m-brand-logo {
+                display: block !important;
+                position: absolute;
+                left: 35px;
+            }
+
+            .close-button {
+                color: #d60606;
+                cursor: pointer;
+                top: 15px;
+                left: 15px;
+                font-size: 20px;
+                position: absolute;
+            }
+
+            .navbar-nav {
+                margin-top: 55px;
+                display: flex;
+                flex-direction: column;
+                width: 55%;
+                .nav-item {
+                    width: 100%;
+                    position: relative;
+
+                    .nav-link {
+                        width: 100%;
+                        color: #fff;
+                        display: block;
+                        font-weight: 600;
+                        font-size: 14px;
+                        padding: 10px 30px 10px 0;
+                        text-transform: capitalize;
+                        border-bottom: 1px solid rgba(78, 78, 78, 0.41);
+                    }
+
+                    &.has-children {
+                        .nav-link {
+                            &:hover::after{
+                                width: 0;
+                            }
+                        }
+
+                        &::after {
+                            content: '\e905';
+                            font-family: 'icomoon';
+                            font-size: 11px;
+                            right: 0;
+                            top: 11px;
+                            color: #555;
+                        }
+                        &:hover::before{
+                            width: 0;
+                        }
+                    }
+                }
+            }
+
+            .nav-actions {
+                display: none;
+            }
+        }
+    }
 }

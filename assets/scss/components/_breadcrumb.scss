@@ -1,3 +1,5 @@
+@import '../mixins';
+
 #breadcrumb {
     position: relative;
     padding: 195px 0px 110px;
@@ -52,6 +54,15 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+@include media("retina", "<minWidth") {
+    #breadcrumb{
+        .content{
+            h2{
+                font-size: 40px;
             }
         }
     }
