@@ -1,0 +1,103 @@
+#course {
+    padding: 100px 0px;
+    background-color: $background-color;
+
+    .course-content {
+        margin-bottom: 70px;
+
+        .result {
+            height: 60px;
+            line-height: 60px;
+            border-radius: 3px;
+            padding-left: 40px;
+            margin-bottom: 20px;
+            background-color: $white-color;
+            box-shadow: 0px 0px 35px 0px rgba(12, 12, 12, 0.2);
+
+            .course-list {
+                position: relative;
+
+                a {
+                    color: #010101;
+                    font-size: 17px;
+                    position: relative;
+                    transition: 0.3s all ease-in-out;
+                    margin-right: 45px;
+
+                    i {
+                        transition: all .3s linear;
+                    }
+
+
+                    &:hover i {
+                        color: #ff5520;
+                    }
+                }
+
+                .empty {
+                    top: 18px;
+                    left: 38px;
+                    content: "";
+                    width: 2px;
+                    height: 20px;
+                    position: absolute;
+                    background-color: #d7d8da;
+                }
+            }
+
+            .search {
+                position: relative !important;
+
+                input {
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    outline: none;
+                }
+
+                button {
+                    top: 0;
+                    right: 0;
+                    color: #fff;
+                    border: none;
+                    height: 100%;
+                    width: 160px;
+                    font-weight: 700;
+                    position: absolute;
+                    background-color: #f4511f;
+                }
+            }
+        }
+    }
+
+    .pagination {
+        margin-top: 15px;
+        justify-content: center;
+        text-align: center;
+        ul {
+            list-style: none;
+            padding: 0;
+
+            li {
+                a {
+                    color: $title-color;
+                    width: 45px;
+                    height: 45px;
+                    font-size: 18px;
+                    font-weight: 700;
+                    margin: 0px 5px;
+                    line-height: 45px;
+                    display: inline-block;
+                    font-family: $secondary-font;
+                    background-color: $white-color;
+                    transition: 0.4s all ease-in-out;
+
+                    &:hover {
+                        color: $white-color;
+                        background-color: $secondary-color;
+                    }
+                }
+            }
+        }
+    }
+}

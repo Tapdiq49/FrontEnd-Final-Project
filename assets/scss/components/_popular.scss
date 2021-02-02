@@ -177,11 +177,11 @@ $breakpoint-tablet: 770px;
         .img{
             height: 270px;
             img{
-                transform: scale(1.8);
+                transform: scale(1.7);
             }
         }
         &:hover .img img {
-            transform: scale(1.8);
+            transform: scale(2);
         }
     }
 }

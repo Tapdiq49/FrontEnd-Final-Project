@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://kit.fontawesome.com/18576e4dba.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="assets/img/download.png">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <title>Course</title>
+</head>
+
+<body>
+    <!-- Start of header -->
+    <header class="header-navbar">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/logos/logo1.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="navbar-menus">
+                    <i class="close-button d-lg-none fas fa-times"></i>
+                    <div class="m-brand-logo text-center">
+                        <a href="#"><img src="assets/img/logos/logo4.png" alt=""></a>
+                    </div>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item has-children plus">
+                            <a class="nav-link hover" href="index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item has-children plus">
+                            <a class="nav-link hover" href="#">About</a>
+                        </li>
+                        <li class="nav-item has-children">
+                            <a class="nav-link hover" href="#">
+                                Course
+                            </a>
+                            <ul class="nav-submenu">
+                                <li><a href="#">Course</a></li>
+                                <li><a href="#">Course Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item has-children">
+                            <a class="nav-link hover" href="#">
+                                Pages
+                            </a>
+                            <ul class="nav-submenu">
+                                <li><a href="#">Gallery</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Event</a></li>
+                                <li><a href="#">Event Details</a></li>
+                                <li><a href="#">Faq</a></li>
+                                <li><a href="#">404</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item has-children">
+                            <a class="nav-link hover" href="#">
+                                Blog
+                            </a>
+                            <ul class="nav-submenu">
+                                <li><a href="#">Blog 1</a></li>
+                                <li><a href="#">Blog 2</a></li>
+                                <li><a href="#">Blog Details 1</a></li>
+                                <li><a href="#">Blog Details 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item has-children">
+                            <a class="nav-link hover" href="#">
+                                Instructor
+                            </a>
+                            <ul class="nav-submenu">
+                                <li><a href="instructor.html">Instructor</a></li>
+                                <li><a href="instructor-detail.html">Instructor Details</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav-actions">
+                        <li class="shopping-cart">
+                            <button><i class="icon-shopping-cart"></i></button>
+                        </li>
+                        <li class="login" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <a href="#">
+                                <i class="icon-user"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-overlay-panel"></div>
+            </div>
+        </nav>
+    </header>
+    <!-- End of header -->
+    <main>
+        <!-- Start of breadcrumb section -->
+        <section id="breadcrumb">
+            <span class="breadcrumb-overlay"></span>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="content">
+                            <h2>Course</h2>
+                            <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                    <i class="icon-double_arrow"></i>
+                                    <li class="breadcrumb-item active" aria-current="page">Courses</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of breadcrumb section -->
+
+        <!-- Start of course section -->
+        <section id="course">
+            <div class="container">
+                <div class="course-content">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="result">
+                                <div class="course-list">
+                                    <a href="#"><i class="icon-th"></i></a>
+                                    <div class="empty"></div>
+                                    <a href="#"><i class="icon-list"></i></a>
+                                    <span class="show-result-text">Showing 1-6 of 6 results</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="result">
+                                <div class="search">
+                                    <form action="#" method="post">
+                                        <input type="text" placeholder="Enter your course">
+                                        <button>Search</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-item">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="item-box">
+                                <div class="img">
+                                    <img src="assets/img/course/cpc1.jpg" alt="">
+                                </div>
+                                <div class="text">
+                                    <div class="course-fee">
+                                        <span>Course Fee: </span>
+                                        <div class="course-fee-amount">
+                                            <del>$59</del>
+                                            <strong>$39</strong>
+                                        </div>
+                                    </div>
+                                    <div class="course-title">
+                                        <h3><a href="#">User Experience Research &amp; Design</a>
+                                        </h3>
+                                        <div class="course-meta">
+                                            <a href="#"><i class="icon-file"></i>14 Lessons</a>
+                                            <a href="#"><i class="icon-user"></i> 20 Students</a>
+                                        </div>
+                                    </div>
+                                    <div class="course-rate">
+                                        <ul>
+                                            <li><i class="icon-star"></i></li>
+                                            <li><i class="icon-star"></i></li>
+                                            <li><i class="icon-star"></i></li>
+                                            <li><i class="icon-star"></i></li>
+                                            <li><i class="icon-star"></i></li>
+                                            <span>(12 Votes)</span>
+                                        </ul>
+                                        <div class="popular-course-btn">
+                                            <a href="#"><i class="icon-chevron-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="item-box">
+                                <div class="img">
+                                    <img src="assets/img/course/cpc2.jpg" alt="">
+                                </div>
+                                <div class="text">
+                                    <div class="course-fee">
+                                        <span>Course Fee: </span>
+                                        <div class="course-fee-amount">
+                                            <del>$59</del>
+                                            <strong>$39</strong>
+                                        </div>
+                                    </div>
+                                    <div class="course-title">
+                                        <h3><a href="#">Copyright Law in Music System Course</a>
+                                        </h3>
+                                        <div class="course-meta">
+                                            <a href="#"><i class="icon-file"></i>14 Lessons</a>
+                                            <a href="#"><i class="icon-user"></i> 20 Students</a>
+                                        </div>
+                                    </div>
+                                    <div class="course-rate">
+                                        <ul>
+                                            <li><i class="icon-star"></i></li>
+                                            <li><i class="icon-star"></i></li>
+                                            <li><i class="icon-star"></i></li>
+                                            <li><i class="icon-star"></i></li>
+                                            <li><i class="icon-star"></i></li>
+                                            <span>(12 Votes)</span>
+                                        </ul>
+                                        <div class="popular-course-btn">
+                                            <a href="#"><i class="icon-chevron-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="item-box">
+                                <div class="img">
+                                    <img src="assets/img/course/cpc3.jpg" alt="">
+                                </div>
+                                <div class="text">
+                                    <div class="course-fee">
+                                        <span>Course Fee: </span>
+                                        <div class="course-fee-amount">
+                                            <del>$59</del>
+                                            <strong>$39</strong>
+                                        </div>
+                                    </div>
+                                    <div class="course-title">
+                                        <h3><a href="#">Master of Public Mental Health Course</a>
+                                        </h3>
+                                        <div class="course-meta">
+                                            <a href="#"><i class="icon-file"></i>14 Lessons</a>
+                                            <a href="#"><i class="icon-user"></i> 20 Students</a>
+                                        </div>
+                                    </div>
+                                    <div class="course-rate">
+                                        <ul>
+                                            <li><i class="icon-star"></i></li>
+                                            <li><i class="icon-star"></i></li>
+                                            <li><i class="icon-star"></i></li>
+                                            <li><i class="icon-star"></i></li>
+                                            <li><i class="icon-star"></i></li>
+                                            <span>(12 Votes)</span>
+                                        </ul>
+                                        <div class="popular-course-btn">
+                                            <a href="#"><i class="icon-chevron-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="item-box">
+                                <div class="img">
+                                    <img src="assets/img/course/cpc4.jpg" alt="">
+                                </div>
+                                <div class="text">
+                                    <div class="course-fee">
+                                        <span>Course Fee: </span>
+                                        <div class="course-fee-amount">
+                                            <del>$59</del>
+                                            <strong>$39</strong>
+                                        </div>
+                                    </div>
+                                    <div class="course-title">
+                                        <h3><a href="#">Digital Marketing Logo Design and SMM Course</a>
+                                        </h3>
+                                        <div class="course-meta">
+                                            <a href="#"><i class="icon-file"></i>14 Lessons</a>
+                                            <a href="#"><i class="icon-user"></i> 20 Students</a>
+                                        </div>
+                                    </div>
+                                    <div class="course-rate">
+                                        <ul>
+                                            <li><i class="icon-star"></i></li>
+                                            <li><i class="icon-star"></i></li>
+                                            <li><i class="icon-star"></i></li>
+                                            <li><i class="icon-star"></i></li>
+                                            <li><i class="icon-star"></i></li>
+                                            <span>(12 Votes)</span>
+                                        </ul>
+                                        <div class="popular-course-btn">
+                                            <a href="#"><i class="icon-chevron-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="item-box">
+                                <div class="img">
+                                    <img src="assets/img/course/cpc5.jpg" alt="">
+                                </div>
+                                <div class="text">
+                                    <div class="course-fee">
+                                        <span>Course Fee: </span>
+                                        <div class="course-fee-amount">
+                                            <del>$59</del>
+                                            <strong>$39</strong>
+                                        </div>
+                                    </div>
+                                    <div class="course-title">
+                                        <h3><a href="#">Graphic Design and Logo Design Course</a>
+                                        </h3>
+                                        <div class="course-meta">
+                                            <a href="#"><i class="icon-file"></i>14 Lessons</a>
+                                            <a href="#"><i class="icon-user"></i> 20 Students</a>
+                                        </div>
+                                    </div>
+                                    <div class="course-rate">
+                                        <ul>
+                                            <li><i class="icon-star"></i></li>
+                                            <li><i class="icon-star"></i></li>
+                                            <li><i class="icon-star"></i></li>
+                                            <li><i class="icon-star"></i></li>
+                                            <li><i class="icon-star"></i></li>
+                                            <span>(12 Votes)</span>
+                                        </ul>
+                                        <div class="popular-course-btn">
+                                            <a href="#"><i class="icon-chevron-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="item-box">
+                                <div class="img">
+                                    <img src="assets/img/course/cpc6.jpg" alt="">
+                                </div>
+                                <div class="text">
+                                    <div class="course-fee">
+                                        <span>Course Fee: </span>
+                                        <div class="course-fee-amount">
+                                            <del>$59</del>
+                                            <strong>$39</strong>
+                                        </div>
+                                    </div>
+                                    <div class="course-title">
+                                        <h3><a href="#">Computer Basic Startup Ultricies Vitae</a>
+                                        </h3>
+                                        <div class="course-meta">
+                                            <a href="#"><i class="icon-file"></i>14 Lessons</a>
+                                            <a href="#"><i class="icon-user"></i> 20 Students</a>
+                                        </div>
+                                    </div>
+                                    <div class="course-rate">
+                                        <ul>
+                                            <li><i class="icon-star"></i></li>
+                                            <li><i class="icon-star"></i></li>
+                                            <li><i class="icon-star"></i></li>
+                                            <li><i class="icon-star"></i></li>
+                                            <li><i class="icon-star"></i></li>
+                                            <span>(12 Votes)</span>
+                                        </ul>
+                                        <div class="popular-course-btn">
+                                            <a href="#"><i class="icon-chevron-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="item-box">
+                                <div class="img">
+                                    <img src="assets/img/course/cpc7.jpg" alt="">
+                                </div>
+                                <div class="text">
+                                    <div class="course-fee">
+                                        <span>Course Fee: </span>
+                                        <div class="course-fee-amount">
+                                            <del>$59</del>
+                                            <strong>$39</strong>
+                                        </div>
+                                    </div>
+                                    <div class="course-title">
+                                        <h3><a href="#">Molecular & Medical Biology, Biotechnology Courses</a>
+                                        </h3>
+                                        <div class="course-meta">
+                                            <a href="#"><i class="icon-file"></i>14 Lessons</a>
+                                            <a href="#"><i class="icon-user"></i> 20 Students</a>
+                                        </div>
+                                    </div>
+                                    <div class="course-rate">
+                                        <ul>
+                                            <li><i class="icon-star"></i></li>
+                                            <li><i class="icon-star"></i></li>
+                                            <li><i class="icon-star"></i></li>
+                                            <li><i class="icon-star"></i></li>
+                                            <li><i class="icon-star"></i></li>
+                                            <span>(12 Votes)</span>
+                                        </ul>
+                                        <div class="popular-course-btn">
+                                            <a href="#"><i class="icon-chevron-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="item-box">
+                                <div class="img">
+                                    <img src="assets/img/course/cpc8.jpg" alt="">
+                                </div>
+                                <div class="text">
+                                    <div class="course-fee">
+                                        <span>Course Fee: </span>
+                                        <div class="course-fee-amount">
+                                            <del>$59</del>
+                                            <strong>$39</strong>
+                                        </div>
+                                    </div>
+                                    <div class="course-title">
+                                        <h3><a href="#">Introduction Environmental Science</a>
+                                        </h3>
+                                        <div class="course-meta">
+                                            <a href="#"><i class="icon-file"></i>14 Lessons</a>
+                                            <a href="#"><i class="icon-user"></i> 20 Students</a>
+                                        </div>
+                                    </div>
+                                    <div class="course-rate">
+                                        <ul>
+                                            <li><i class="icon-star"></i></li>
+                                            <li><i class="icon-star"></i></li>
+                                            <li><i class="icon-star"></i></li>
+                                            <li><i class="icon-star"></i></li>
+                                            <li><i class="icon-star"></i></li>
+                                            <span>(12 Votes)</span>
+                                        </ul>
+                                        <div class="popular-course-btn">
+                                            <a href="#"><i class="icon-chevron-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="item-box">
+                                <div class="img">
+                                    <img src="assets/img/course/cpc9.jpg" alt="">
+                                </div>
+                                <div class="text">
+                                    <div class="course-fee">
+                                        <span>Course Fee: </span>
+                                        <div class="course-fee-amount">
+                                            <del>$59</del>
+                                            <strong>$39</strong>
+                                        </div>
+                                    </div>
+                                    <div class="course-title">
+                                        <h3><a href="#">Computer Basic Startup Ultricies Vitae</a>
+                                        </h3>
+                                        <div class="course-meta">
+                                            <a href="#"><i class="icon-file"></i>14 Lessons</a>
+                                            <a href="#"><i class="icon-user"></i> 20 Students</a>
+                                        </div>
+                                    </div>
+                                    <div class="course-rate">
+                                        <ul>
+                                            <li><i class="icon-star"></i></li>
+                                            <li><i class="icon-star"></i></li>
+                                            <li><i class="icon-star"></i></li>
+                                            <li><i class="icon-star"></i></li>
+                                            <li><i class="icon-star"></i></li>
+                                            <span>(12 Votes)</span>
+                                        </ul>
+                                        <div class="popular-course-btn">
+                                            <a href="#"><i class="icon-chevron-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <ul>
+                                <li>
+                                    <a href="#">01</a>
+                                    <a href="#">02</a>
+                                    <a href="#">03</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of course section -->
+
+    </main>
+    <!-- Start of footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="content-wrap">
+                        <div class="footer-logo">
+                            <a href="#">
+                                <img src="assets/img/logos/logo5.png" alt="">
+                            </a>
+                        </div>
+                        <p>We work with a passion of taking challenges and creating new ones in advertising sector.</p>
+                        <a class="footer-btn" href="#">About us</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="content-wrap newsletter">
+                        <h3 class="">Newsletter</h3>
+                        <p>Subscribe our newsletter to get our latest update &amp; news </p>
+                        <form action="#">
+                            <input type="email" placeholder="Your mail address">
+                            <button type="submit"><i class="icon-paper-plane"></i></button>
+                        </form>
+                        <div class="footer-social">
+                            <ul>
+                                <li><a href="#"><i class="icon-facebook"></i></a></li>
+                                <li><a href="#"><i class="icon-twitter"></i></a></li>
+                                <li><a href="#"><i class="icon-behance"></i></a></li>
+                                <li><a href="#"><i class="icon-youtube-play"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="content-wrap official-info">
+                        <h3>Official info:</h3>
+                        <ul>
+                            <li>
+                                <i class="icon-map-marker"></i>
+                                <a href="#">30 Commercial Road Fratton, Australia</a>
+                            </li>
+                            <li>
+                                <i class="icon-phone"></i><a href="#">1-888-452-1505</a>
+                            </li>
+                        </ul>
+                        <div class="open-hour">
+                            <span>Open Hours: </span>
+                            <p>Mon - Sat: 8 am - 5 pm, Sunday: CLOSED </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="content-wrap instagram">
+                        <h3>Instagram</h3>
+                        <div class="insta-feed">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/img/instagram/ins1.jpg" alt="">
+                                        <i class="icon-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/img/instagram/ins2.jpg" alt="">
+                                        <i class="icon-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/img/instagram/ins3.jpg" alt="">
+                                        <i class="icon-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/img/instagram/ins4.jpg" alt="">
+                                        <i class="icon-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/img/instagram/ins5.jpg" alt="">
+                                        <i class="icon-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/img/instagram/ins6.jpg" alt="">
+                                        <i class="icon-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <span>© 2021 Yle - Education. All rights reserved.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End of footer -->
+    <div class="modal yl-login-modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header position-relative" data-background="assets/img/banner/lg-bg.jpg">
+                    <div class="modal-login-head" id="exampleModalLabel">
+                        <div class="login-head text-center pera-content">
+                            <a href="#"><img src="assets/img/logos/logo4.png" alt=""></a>
+                            <p>Boamco laboris nisi ut aliquip ex ea commodo conseq nderit in voluptate velit esse</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="yl-modal-signup-login-tab">
+                        <div class="yl-faq-tab-btn ul-li">
+                            <ul id="tabs" class="nav text-center faq-tab-btn-area">
+                                <li class="nav-item left-radius">
+                                    <a href="#" data-target="#login" data-toggle="tab"
+                                        class="nav-link text-capitalize active show">Login</a>
+                                </li>
+                                <li class="nav-item right-radius">
+                                    <a href="#" data-target="#signUp" data-toggle="tab"
+                                        class="nav-link text-capitalize">Sign Up</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="tabsContent" class="tab-content">
+                            <div id="login" class="tab-pane fade active show">
+                                <div class="yl-login-content pera-content text-center">
+                                    <form action="#" method="post">
+                                        <input type="text" placeholder="Username or email">
+                                        <input type="text" placeholder="Password">
+                                        <div class="yl-login-label">
+                                            <label for="form">
+                                                <input type="checkbox" id="form">Remember me
+                                            </label>
+                                            <a href="#">Forget Password?</a>
+                                        </div>
+                                        <button type="submit">Submit</button>
+                                    </form>
+                                    <p>Don’t have any account? <a href="#">Signup</a></p>
+                                </div>
+                            </div>
+                            <div id="signUp" class="tab-pane fade">
+                                <div class="yl-sign-up-content pera-content text-center">
+                                    <form action="#" method="post">
+                                        <input type="text" placeholder="First Name">
+                                        <input type="text" placeholder="Last Name">
+                                        <input type="email" placeholder="Email address">
+                                        <input type="text" placeholder="Username">
+                                        <input type="text" placeholder="Password">
+                                        <input type="text" placeholder="Confirm password">
+                                        <div class="yl-login-label">
+                                            <span><input type="checkbox">By clicking signup you are agree to our terms
+                                                of service</span>
+                                        </div>
+                                        <button type="submit">Submit</button>
+                                    </form>
+                                    <p>Already have an account? <a href="#">Log in</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a id="back2Top" class="top-scroll" title="Back to top" href="#"><i class="icon-chevron-up"></i></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="assets/js/typer.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
