@@ -254,7 +254,7 @@ $breakpoint-tablet: 1000px;
             position: fixed;
             width: 310px;
             overflow-y: scroll;
-            background-color: #000;
+            background-color: $title-color;
             padding: 50px 35px 35px 35px;
             box-shadow: 0px 3px 5px rgba(100, 100, 100, 0.69);
             transition: all 0.5s ease-in;
@@ -285,12 +285,12 @@ $breakpoint-tablet: 1000px;
                 width: 55%;
 
                 .nav-item {
-                    width: 100%;
+                    width: 140%;
                     position: relative;
 
                     .nav-link {
                         width: 100%;
-                        color: #fff;
+                        color: $white-color;
                         display: block;
                         font-weight: 600;
                         font-size: 14px;
@@ -312,7 +312,7 @@ $breakpoint-tablet: 1000px;
                             font-size: 11px;
                             right: 0;
                             top: 11px;
-                            color: #555;
+                            color: $primary-color;
                         }
 
                         &:hover::before {

@@ -1,0 +1,172 @@
+#instructor-details {
+    padding: 100px 0px;
+    background-color: #f2f2f4;
+
+    .content {
+        padding: 35px;
+        border-radius: 10px;
+        background-color: $white-color;
+        box-shadow: 0px 6px 38px 0px rgba(0, 0, 0, 0.4);
+        display: flex;
+        position: relative;
+
+        .img {
+            width: 370px;
+            max-width: 100%;
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: 100%;
+            box-shadow: 0px 6px 42px 0px rgba(4, 4, 97, 0.2);
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        .text {
+            padding-top: 10px;
+
+            .social-name {
+                h3 {
+                    color: $title-color;
+                    font-size: 30px;
+                    font-weight: 700;
+                    padding-bottom: 5px;
+                    font-family: $secondary-font;
+                }
+
+                span {
+                    font-size: 18px;
+                    font-weight: 700;
+                    font-family: $secondary-font;
+                }
+
+                .social {
+                    margin-top: 10px;
+
+                    a {
+                        font-size: 18px;
+                        margin-right: 15px;
+
+                        .icon-facebook {
+                            color: #3b5998;
+                        }
+
+                        .icon-twitter {
+                            color: #1da1f2;
+                        }
+
+                        .icon-linkedin {
+                            color: #0077b5;
+                        }
+
+                        .icon-instagram {
+                            color: #5973e9;
+                        }
+
+                    }
+                }
+            }
+
+            .profile {
+                width: 270px;
+                padding: 18px;
+                border-radius: 3px;
+                border: 2px solid #d1d1d3;
+
+                div {
+                    display: block;
+                    margin-bottom: 5px;
+
+                    i {
+                        margin-right: 10px;
+                        color: $secondary-color;
+                    }
+                }
+            }
+
+            .text-paragraph {
+                margin-top: 35px;
+
+                p {
+                    margin-bottom: 30px;
+                    text-align: justify;
+                }
+            }
+
+            .instructor-details-btn {
+                color: $title-color;
+                height: 45px;
+                width: 150px;
+                font-size: 15px;
+                font-weight: 700;
+                line-height: 40px;
+                border-radius: 30px;
+                border: 2px solid $red-color;
+                transition: all 0.3s linear;
+                text-align: center;
+                cursor: pointer;
+
+                &:hover {
+                    color: $white-color;
+                    background-color: $red-color;
+                }
+
+                a {
+                    position: relative;
+                    transition: all .3s linear;
+
+                    i {
+                        position: absolute;
+                        top: 50%;
+                        right: -14px;
+                        transform: translateY(-50%);
+                    }
+                }
+
+                &:hover a {
+                    color: $white-color;
+                }
+            }
+        }
+
+        &::after {
+            left: 0;
+            right: 0;
+            width: 97%;
+            content: "";
+            height: 15px;
+            bottom: -15px;
+            margin: 0 auto;
+            position: absolute;
+            border-radius: 10px;
+            background-color: #f6f6fa;
+        }
+    }
+}
+
+$breakpoint-tablet: 978px;
+@media (max-width: $breakpoint-tablet) {
+    .container {
+        width: 100% !important;
+    }
+
+    .content {
+        flex-direction: column;
+
+        .img {
+            margin: 0 auto;
+        }
+
+        .social-name {
+            text-align: center;
+        }
+
+        .profile {
+            width: 100% !important;
+            text-align: center;
+            margin-top: 15px;
+        }
+    }
+}
