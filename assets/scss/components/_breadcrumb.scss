@@ -1,0 +1,58 @@
+#breadcrumb {
+    position: relative;
+    padding: 195px 0px 110px;
+    background-image: url(../img/bn-bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    .breadcrumb-overlay {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+        background-color: #030014;
+        position: absolute !important;
+    }
+
+    .content {
+        z-index: 1;
+        position: relative;
+        text-align: center;
+
+        h2 {
+            color: $white-color;
+            font-size: 60px;
+            font-weight: 700;
+            padding-bottom: 10px;
+            line-height: 1.2;
+        }
+
+        nav {
+            ol {
+                justify-content: center;
+                align-items: center;
+                background-color: transparent;
+
+                i {
+                    font-weight: 900;
+                    color: #e3002a;
+                    display: inline-block;
+                    padding: .5rem;
+                }
+
+                li {
+                    color: $white-color;
+                    font-weight: 700;
+
+                    a {
+                        &:hover {
+                            color: $white-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

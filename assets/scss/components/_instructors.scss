@@ -1,0 +1,83 @@
+#instructors {
+    padding: 100px 0px;
+    background-color: #f1f1f3;
+
+    .instructor-content {
+        .box {
+            position: relative;
+            text-align: center;
+
+            .img {
+                width: 160px;
+                z-index: 3;
+                height: 160px;
+                bottom: -50px;
+                margin: 0 auto;
+                overflow: hidden;
+                border-radius: 100%;
+                box-shadow: 0px 6px 42px 0px rgba(4, 4, 97, 0.2);
+                position: relative;
+            }
+
+            .body {
+                border-radius: 6px;
+                padding: 70px 15px 30px;
+                background-color: $white-color;
+                z-index: 2;
+                box-shadow: 0px 6px 38px 0px rgba(0, 0, 0, 0.1);
+                transition: 0.4s all ease-in-out;
+                position: relative;
+
+                h3 {
+                    color: $title-color;
+                    font-size: 20px;
+                    font-weight: 700;
+                    
+                    a{
+                        transition: 0.4s all ease-in-out;
+                    }
+                }
+
+                .developer {
+                    color: $title-color;
+                    font-weight: 700;
+                    padding: 5px 0px;
+                    font-family: $secondary-font;
+                    display: block;
+                    font-size: 14px;
+                    transition: 0.4s all ease-in-out;
+                }
+
+                .course {
+                    display: block;
+                    font-size: 14px;
+                    transition: 0.4s all ease-in-out;
+                }
+                &::after{
+                    left: 0;
+                    right: 0;
+                    width: 90%;
+                    content: "";
+                    height: 10px;
+                    z-index: -1;
+                    bottom: -8px;
+                    margin: 0 auto;
+                    position: absolute;
+                    border-radius: 6px;
+                    background-color: #fbfbff;
+                    transition: 0.4s all ease-in-out;
+                }
+            }
+            &:hover .body{
+                background-color: #ff5520;
+            }
+            &:hover .body::after{
+                background-color: #f7815d;
+            }
+            &:hover .body h3 a,&:hover .body span{
+                color: $white-color;
+            }
+        }
+    }
+}
+

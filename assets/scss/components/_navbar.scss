@@ -218,9 +218,3 @@
     z-index: 19999;
     background-color: rgba(0, 0, 0, 0.5);
 }
-
-nav{
-    @include media("retina", "<minWidth") {
-        color: white;
-      };
-}
