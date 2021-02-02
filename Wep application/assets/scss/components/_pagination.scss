@@ -1,0 +1,34 @@
+#pagination{
+    background-color: $background-color;
+    padding-bottom: 70px;
+    .pagination {
+        justify-content: center;
+        text-align: center;
+    
+        ul {
+            list-style: none;
+            padding: 0;
+    
+            li {
+                a {
+                    color: $title-color;
+                    width: 45px;
+                    height: 45px;
+                    font-size: 18px;
+                    font-weight: 700;
+                    margin: 0px 5px;
+                    line-height: 45px;
+                    display: inline-block;
+                    font-family: $secondary-font;
+                    background-color: $white-color;
+                    transition: 0.4s all ease-in-out;
+    
+                    &:hover {
+                        color: $white-color;
+                        background-color: $secondary-color;
+                    }
+                }
+            }
+        }
+    }
+}

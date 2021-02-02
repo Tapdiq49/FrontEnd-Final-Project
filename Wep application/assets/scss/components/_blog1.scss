@@ -1,0 +1,164 @@
+#categories {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-color: $background-color;
+
+    .categories-item-box {
+        margin: 0 auto;
+        max-width: 370px;
+        margin-bottom: 40px;
+        background-color: $white-color;
+        transition: 0.3s all ease-in-out;
+
+        .categories-box {
+            position: relative;
+
+            .categories-img {
+                overflow: hidden;
+                position: relative;
+                &::after{
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    content: "";
+                    height: 100%;
+                    position: absolute;
+                    background-color: rgba(0, 0, 0, 0.25)
+                }
+
+                img {
+                    transition: 0.4s all linear;
+                    max-width: 100%;
+                }
+            }
+
+            .date {
+                left: 25px;
+                width: 80px;
+                height: 80px;
+                bottom: -30px;
+                padding-top: 13px;
+                border-radius: 3px;
+                position: absolute;
+                background-color: $title-color;
+                text-align: center;
+
+                a {
+                    color: $white-color;
+                    font-size: 30px;
+                    font-weight: 700;
+                    line-height: 1.1;
+                    display: inline-block;
+                    font-family: $secondary-font;
+
+                    span {
+                        display: block;
+                        font-size: 16px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+
+        .categories-body {
+            padding: 45px 25px;
+            box-shadow: 0px 12px 35px 0px rgba(12, 12, 12, 0.1);
+
+            .meta-2 {
+                text-transform: uppercase;
+
+                a {
+                    font-size: 13px;
+                    font-weight: 700;
+                    margin-right: 25px;
+                    position: relative;
+                    color: $secondary-color;
+                    font-family: $secondary-font;
+
+                    &.line::before {
+                        top: -3px;
+                        width: 2px;
+                        content: "";
+                        right: -15px;
+                        height: 20px;
+                        position: absolute;
+                        background-color: $secondary-color;
+                    }
+                }
+            }
+
+            .title {
+                h3 {
+                    color: $title-color;
+                    font-size: 24px;
+                    font-weight: 700;
+                    margin-bottom: 15px;
+                    position: relative;
+                    padding: 10px 0px 15px;
+                    border-bottom: 2px solid #eaeaea;
+                    transition: 0.3s all ease-in-out;
+
+                    &::before {
+                        left: 0;
+                        bottom: -1px;
+                        height: 3px;
+                        content: "";
+                        width: 37px;
+                        position: absolute;
+                        background-color: $red-color;
+                    }
+
+                    a {
+                        transition: 0.3s all ease-in-out;
+
+                        &:hover {
+                            color: $red-color;
+                        }
+                    }
+                }
+
+                p {
+                    padding-bottom: 14px;
+                }
+
+                .read-more {
+                    color: $title-color;
+                    display: inline-block;
+                    font-size: 14px;
+                    font-weight: 700;
+                    transition: 0.3s all ease-in-out;
+                    position: relative;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        color: $secondary-color;
+                    }
+
+                    &::after {
+                        left: 0;
+                        bottom: 0;
+                        content: "";
+                        width: 0;
+                        height: 1px;
+                        position: absolute;
+                        transition: 0.3s all ease-in-out;
+                        background-color: $secondary-color;
+                    }
+
+                    &:hover::after {
+                        width: 100%;
+                    }
+
+                }
+            }
+        }
+
+        &:hover {
+            box-shadow: 0px 43px 35px 0px rgba(12, 12, 12, 0.1);
+        }
+
+        &:hover .categories-box .categories-img img {
+            transform: scale(1.2) rotate(5deg);
+        }
+    }
+}
