@@ -266,6 +266,7 @@
                     align-items: center;
                     cursor: pointer;
                     z-index: 2;
+
                     a {
                         position: relative;
                         color: $white-color;
@@ -313,6 +314,96 @@
                     font-family: $secondary-font;
                     z-index: 1;
                 }
+            }
+        }
+    }
+}
+
+$breakpoint-tablet: 1440px;
+
+@media (max-width: $breakpoint-tablet) {
+    .content {
+        .intro-img {
+            width: 58%;
+            right: 0;
+        }
+
+        .intro-text {
+            max-width: 540px !important;
+        }
+    }
+}
+
+
+$breakpoint-tablet: 1070px;
+
+@media (max-width: $breakpoint-tablet) {
+    .content {
+        .intro-img {
+            width: 57% !important;
+            top: 229px !important;
+        }
+    }
+}
+
+$breakpoint-tablet: 990px;
+
+@media (max-width: $breakpoint-tablet) {
+    .content {
+        .intro-img {
+            display: none;
+        }
+
+        .intro-text {
+            min-width: 100%;
+            text-align: center;
+            .cd-headline {
+                padding-bottom: 75px !important;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                text-align: center;
+                margin: 0 54px;
+            }
+            .intro-btn{
+                justify-content: center;
+                .yle{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+$breakpoint-tablet: 480px;
+
+@media (max-width: $breakpoint-tablet) {
+    .content {
+        .intro-img {
+            display: none;
+        }
+
+        .intro-text {
+            min-width: 100%;
+
+            .banner-tag {
+                text-align: center;
+                background-color: transparent !important;
+                margin-bottom: 5px !important;
+                span {
+                    padding: 5px 10px !important;
+                    font-size: 16px;
+                    margin-right: 0;
+                    margin-bottom: 10px;
+                }
+            }
+            p{
+                text-align: center;
+            }
+            .cd-headline {
+                font-size: 36px !important;
+                padding-bottom: 65px !important;
+                margin: 0 !important;
             }
         }
     }

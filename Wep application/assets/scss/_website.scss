@@ -7,7 +7,9 @@ body {
     line-height: 1.625;
     font-family: $primary-font;
 }
-
+.container{
+    max-width: 1200px;
+}
 a {
     color: inherit;
     text-decoration: none;
@@ -70,6 +72,32 @@ h2 {
     }
 }
 
+.owl-dots {
+    margin-top: 15px;
+    text-align: center;
+
+    .owl-dot {
+
+        width: 28px;
+        height: 5px;
+        margin: 0px 5px;
+        cursor: pointer;
+        border-radius: 30%;
+        display: inline-block;
+        background-color: #ececed !important;
+        transition: 0.3s all ease-in-out;
+        outline: none;
+
+        &.active {
+            width: 38px;
+            background-color: $secondary-color !important;
+        }
+        span{
+            display: none !important;
+        }
+    }
+}
+
 .all-section-title {
     max-width: 590px;
     margin: 0 auto;
@@ -94,7 +122,7 @@ h2 {
         position: relative;
         font-size: 18px;
         font-weight: 700;
-        color: #e3002a;
+        color: $secondary-color;
         padding: 0px 15px;
         position: relative;
 
@@ -159,6 +187,7 @@ h2 {
                 margin-bottom: 20px;
             }
         }
+
         textarea {
             width: 100%;
             border: none;
@@ -169,7 +198,8 @@ h2 {
             border-radius: 8px;
             background-color: #efeff0;
         }
-        button{
+
+        button {
             color: $white-color;
             width: 100%;
             border: none;
@@ -180,7 +210,8 @@ h2 {
             font-weight: 700;
             background-color: $secondary-color;
             position: relative;
-            i{
+
+            i {
                 margin-left: 10px;
                 position: absolute;
                 top: 50%;
@@ -191,23 +222,28 @@ h2 {
 }
 
 $breakpoint-tablet: 736px;
+
 @media (max-width: $breakpoint-tablet) {
-    .all-section-title{
-        .title-shadow{
+    .all-section-title {
+        .title-shadow {
             top: -35px;
             font-size: 3.3rem;
         }
-        h2{
+
+        h2 {
             font-size: 25px;
         }
     }
+
     .contact-form {
-        h3{
+        h3 {
             font-size: 29px;
         }
     }
 }
+
 $breakpoint-tablet: 970px;
+
 @media (max-width: $breakpoint-tablet) {
     form {
         .contact-form-input {
@@ -215,7 +251,8 @@ $breakpoint-tablet: 970px;
                 width: 100% !important;
             }
         }
-        textarea{
+
+        textarea {
             margin-top: 18px !important;
             height: 115px !important;
         }

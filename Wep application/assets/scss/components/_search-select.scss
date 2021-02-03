@@ -97,3 +97,25 @@
         text-decoration: underline;
     }
 }
+
+$breakpoint-tablet: 970px;
+
+@media (max-width: $breakpoint-tablet) {
+    #select-section{
+        text-align: center;
+        .search-form{
+            .search-circle1{
+                display: none;
+            }
+            .search-circle2{
+                display: none;
+            }
+            form{
+                .select-option{
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
