@@ -57,11 +57,12 @@
         }
     }
 }
-@include media("retina", "<minWidth") {
+$breakpoint-tablet: 970px;
+@media (max-width: $breakpoint-tablet) {
     #breadcrumb{
         .content{
             h2{
-                font-size: 40px;
+                font-size: 32px;
             }
         }
     }
