@@ -1,4 +1,9 @@
-$(document).ready(function(){
+$(document).ready(function () {
+    $('body').toggleClass('loaded');
+    setTimeout(function () {
+        $('body').addClass('loaded');
+    }, 600);
+
     $(window).scroll(function (e) {
         if ($(this).scrollTop() > 84) {
             $("header nav").addClass('header-fixed');
@@ -9,7 +14,9 @@ $(document).ready(function(){
         }
     });
     $("#back2Top").click(function () {
-        $("html, body").animate({ scrollTop: 0 }, 'slow');
+        $("html, body").animate({
+            scrollTop: 0
+        }, 'slow');
     });
 
     $(".navbar-toggler").click(function () {
@@ -21,37 +28,54 @@ $(document).ready(function(){
         $(this).parent().removeClass('show');
         $(".nav-overlay-panel").css('display', 'none');
     });
-    
+
     $('.category-carousel').owlCarousel({
-        loop:true,
-        margin:30,
-        nav:false,
-        responsive:{
-            0:{
-                items:1
+        loop: true,
+        margin: 30,
+        nav: false,
+        responsive: {
+            0: {
+                items: 1
             },
-            600:{
-                items:2
+            600: {
+                items: 2
             },
-            1000:{
-                items:3
+            1000: {
+                items: 3
             }
         }
     })
 
     $('.testimonial-carousel').owlCarousel({
-        loop:true,
-        margin:30,
-        nav:false,
-        responsive:{
-            0:{
-                items:1
+        loop: true,
+        margin: 30,
+        nav: false,
+        responsive: {
+            0: {
+                items: 1
             },
-            600:{
-                items:2
+            600: {
+                items: 2
             },
-            1000:{
-                items:4
+            1000: {
+                items: 4
+            }
+        }
+    })
+
+    $('.blog-carousel').owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 3
             }
         }
     })

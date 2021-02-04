@@ -7,13 +7,24 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
     <script src="https://kit.fontawesome.com/18576e4dba.js" crossorigin="anonymous"></script>
     <link rel="icon" href="assets/img/download.png">
     <link rel="stylesheet" href="assets/css/style.min.css">
     <title>Course</title>
 </head>
 
-<body>
+<body class="loaded">
+
+    <!-- Start of loader -->
+    <div id="loader-wrapper">
+        <div id="loader">
+            <div class="preloader"></div>
+        </div>
+    </div>
+    <!-- End of loader -->
+
     <!-- Start of header -->
     <header class="header-navbar">
         <nav class="navbar navbar-expand-lg navbar-light ">
@@ -66,9 +77,7 @@
                             </a>
                             <ul class="nav-submenu">
                                 <li><a href="blog1.html">Blog 1</a></li>
-                                <li><a href="#">Blog 2</a></li>
                                 <li><a href="#">Blog Details 1</a></li>
-                                <li><a href="#">Blog Details 2</a></li>
                             </ul>
                         </li>
                         <li class="nav-item has-children">
@@ -97,6 +106,7 @@
         </nav>
     </header>
     <!-- End of header -->
+
     <main>
         <!-- Start of breadcrumb section -->
         <section id="breadcrumb">
@@ -513,6 +523,7 @@
         <!-- End of pagination section -->
 
     </main>
+
     <!-- Start of footer -->
     <footer id="footer">
         <div class="container">
@@ -616,6 +627,8 @@
         </div>
     </footer>
     <!-- End of footer -->
+
+    <!-- Start of modal -->
     <div class="modal yl-login-modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -682,12 +695,14 @@
             </div>
         </div>
     </div>
+    <!-- End of modal -->
 
     <a id="back2Top" class="top-scroll" title="Back to top" href="#"><i class="icon-chevron-up"></i></a>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="assets/js/typer.js"></script>
     <script src="assets/js/main.js"></script>
 </body>

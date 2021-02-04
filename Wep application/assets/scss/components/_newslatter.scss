@@ -1,0 +1,97 @@
+#newslatter {
+    position: relative;
+    z-index: 1;
+    background-color: $background-color;
+
+    .newslatter-content {
+        border-radius: 5px;
+        padding: 35px 40px;
+        background-color: $title-color;
+
+        .subscribe {
+            display: flex;
+            align-items: center;
+
+            .subscribe-icon {
+                line-height: 1;
+                margin-right: 10px;
+
+                i {
+                    color: $white-color;
+                    font-size: 45px;
+                }
+            }
+
+            .subscribe-text {
+                h3 {
+                    color: $white-color;
+                    font-size: 30px;
+                    font-weight: 700;
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .like {
+            display: flex;
+            align-items: center;
+
+            span {
+                color: #bbb;
+                font-size: 16px;
+            }
+
+            img {
+                padding-left: 10px;
+                margin-bottom: 5px;
+                max-width: 100%;
+            }
+        }
+    }
+
+    .newslatter-form {
+        position: relative;
+        margin-top: 16px;
+        form {
+            input {
+                height: 48px;
+                width: 100%;
+                border: none;
+                outline: none;
+                max-width: 320px;
+                padding-left: 20px;
+                background-color: #292929;
+            }
+
+            button {
+                background-color: $red-color;
+                top: 0;
+                padding: 0;
+                color: $white-color;
+                border: none;
+                width: 145px;
+                height: 48px;
+                font-size: 14px;
+                font-weight: 700;
+                position: absolute;
+                transition: 0.3s all ease-in-out;
+
+                i {
+                    margin-left: 5px;
+                    transition: 0.3s all ease-in-out;
+                }
+            }
+        }
+    }
+
+    &::before {
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        content: "";
+        width: 100%;
+        height: 70px;
+        position: absolute;
+        background-color: #000a1f;
+    }
+}
