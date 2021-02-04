@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'icomoon';
-    src: url('../fonts/icomoon.eot?r9qxww');
-    src: url('../fonts/icomoon.eot?r9qxww#iefix') format('embedded-opentype'),
-        url('../fonts/icomoon.ttf?r9qxww') format('truetype'),
-        url('../fonts/icomoon.woff?r9qxww') format('woff'),
-        url('../fonts/icomoon.svg?r9qxww#icomoon') format('svg');
+    src: url('../fonts/icomoon.eot?8jcrl8');
+    src: url('../fonts/icomoon.eot?8jcrl8#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?8jcrl8') format('truetype'),
+        url('../fonts/icomoon.woff?8jcrl8') format('woff'),
+        url('../fonts/icomoon.svg?8jcrl8#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -26,6 +26,22 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-flag:before {
+    content: "\e921";
+}
+
+.icon-play:before {
+    content: "\e902";
+}
+
+.icon-business-card:before {
+    content: "\e920";
+}
+
+.icon-clean_hands:before {
+    content: "\e91f";
+}
+
 .icon-email:before {
     content: "\e91e";
 }
@@ -44,10 +60,6 @@
 
 .icon-genius:before {
     content: "\e907";
-}
-
-.icon-play:before {
-    content: "\e902";
 }
 
 .icon-th:before {

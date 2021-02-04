@@ -1,0 +1,119 @@
+#about {
+    padding: 110px 0px;
+
+    .about-section {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+
+        .about-img {
+            padding-left: 90px;
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .about-text {
+            padding-top: 15px;
+
+            .all-section-title {
+                text-align: left;
+                padding-top: 22px;
+
+                p {
+                    top: -10px;
+                    font-size: 50px;
+                    text-align: left;
+                }
+            }
+
+            .about-page {
+                max-width: 500px;
+                line-height: 1.625;
+                padding-bottom: 30px;
+                margin-bottom: 30px;
+                border-bottom: 1px solid #e6e9f2;
+            }
+
+            .about-video {
+                display: flex;
+
+                .video {
+                    position: relative;
+                    width: 150px;
+                    height: 90px;
+                    overflow: hidden;
+                    border-radius: 5px;
+                    margin-right: 25px;
+                    text-align: center;
+
+                    img {
+                        max-width: 100%;
+                    }
+
+                    a {
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        right: 0;
+                        width: 50px;
+                        height: 50px;
+                        color: #fff;
+                        margin: 0 auto;
+                        line-height: 45px;
+                        border-radius: 100%;
+                        background-color: $title-color;
+                        border: 4px solid $white-color;
+                        transform: translateY(-50%);
+                        transition: all .4s linear;
+                        i{
+                            display: inline-block;
+                            transition: all .4s linear;
+                            font-size: 20px;
+                        }
+                    }
+                    &:hover{
+                        a{ 
+                            background-color: $red-color;
+                            i{
+                                transform: rotate(360deg);
+
+                            }
+                        }
+                    }
+                }
+
+                .video-text {
+                    padding-top: 8px;
+                    max-width: 280px;
+                    display: inline-block;
+
+                    h3 {
+                        color: $title-color;
+                        font-size: 16px;
+                        font-weight: 700;
+                        padding-bottom: 8px;
+                        font-family: $secondary-font;
+                        margin-bottom: 0;
+                    }
+
+                    p {
+                        font-size: 15px;
+                        line-height: 1.6;
+                    }
+                }
+            }
+        }
+    }
+}
+
+$breakpoint-tablet: 991px;
+
+@media (max-width: $breakpoint-tablet) {
+    .about-img{
+        text-align: center;
+        padding-left: 0 !important;
+    }
+}

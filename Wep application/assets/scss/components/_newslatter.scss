@@ -61,6 +61,7 @@
                 max-width: 320px;
                 padding-left: 20px;
                 background-color: #292929;
+                color: $primary-color;
             }
 
             button {
@@ -93,5 +94,22 @@
         height: 70px;
         position: absolute;
         background-color: #000a1f;
+    }
+}
+
+$breakpoint-tablet: 560px;
+
+@media (max-width: $breakpoint-tablet) {
+    .newslatter-form{
+        form{
+            display: flex;
+            justify-content: flex-start;
+            font-size: 13px;
+            button{
+                right: 0;
+                width: 100px !important;
+                font-size: 13px !important;
+            }
+        }
     }
 }

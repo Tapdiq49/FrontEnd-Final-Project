@@ -107,6 +107,13 @@
             }
         }
     }
+    &.about-services{
+        padding-top: 0 !important;
+        &::before {
+            content: "";
+            background-color: transparent;
+        }
+    }
 }
 
 $breakpoint-tablet: 990px;

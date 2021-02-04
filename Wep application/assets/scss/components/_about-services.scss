@@ -1,0 +1,86 @@
+#about-services {
+    background-image: url(../img/ser-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 110px 0px;
+
+    .all-section-title {
+        .title-shadow {
+            color: $white-color;
+            opacity: 1;
+        }
+    }
+
+    .about-services-content {
+        overflow: hidden;
+        padding-top: 35px;
+
+        .about-item-box {
+            position: relative;
+            display: flex;
+            z-index: 1;
+            padding: 25px 25px;
+            margin-bottom: 20px;
+            transition: 0.3s all ease-in-out;
+            box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, .1);
+            background-color: $white-color;
+
+            .about-services-icon {
+                line-height: 1;
+                margin-right: 15px;
+                font-size: 45px;
+                color: $secondary-color;
+                transition: 0.3s all ease-in-out;
+            }
+
+            .about-services-text {
+
+                h3 {
+                    color: $title-color;
+                    font-size: 22px;
+                    font-weight: 700;
+                    padding-bottom: 10px;
+                    transition: 0.3s all ease-in-out;
+                    font-family: $secondary-font;
+                    margin-bottom: 0;
+                }
+
+                span {
+                    font-size: 15px;
+                    color: $primary-color;
+                    transition: 0.3s all ease-in-out;
+                }
+            }
+
+            &::after {
+                top: 0;
+                left: 0;
+                width: 0;
+                z-index: -1;
+                content: "";
+                height: 100%;
+                position: absolute;
+                background-color: $title-color;
+                transition: all 500ms ease-in-out;
+            }
+
+            &:hover {
+                transform: translateY(-15px);
+                &::after {
+                    width: 100%;
+                }
+                .about-services-icon{
+                    color: $red-color;
+                }
+                .about-services-text{
+                    color: $white-color;
+                    h3{
+                        a{
+                            color: $white-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
