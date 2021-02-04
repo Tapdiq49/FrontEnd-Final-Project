@@ -7,9 +7,11 @@ body {
     line-height: 1.625;
     font-family: $primary-font;
 }
-.container{
+
+.container {
     max-width: 1200px;
 }
+
 a {
     color: inherit;
     text-decoration: none;
@@ -20,6 +22,7 @@ h2 {
 }
 
 .course-btn {
+    transition: all .1s linear;
     a {
         position: relative;
         color: #fff;
@@ -33,6 +36,7 @@ h2 {
         background-color: $red-color;
         text-align: center;
         z-index: 1;
+        transition: all .4s linear;
 
         &::after {
             top: 0;
@@ -45,7 +49,7 @@ h2 {
             transform: skew(50deg);
             transition-duration: 0.6s;
             transform-origin: top left;
-            background-color: $secondary-color;
+            background-color: $red-color;
         }
 
         &:hover::after {
@@ -92,7 +96,8 @@ h2 {
             width: 38px;
             background-color: $secondary-color !important;
         }
-        span{
+
+        span {
             display: none !important;
         }
     }
@@ -103,11 +108,12 @@ h2 {
     margin: 0 auto;
     position: relative;
     text-align: center;
+    padding-top: 54px;
 
     .title-shadow {
         left: 0;
         right: 0;
-        top: -60px;
+        top: -10px;
         opacity: 0.04;
         color: #53536c;
         line-height: 1;

@@ -1,0 +1,112 @@
+#register {
+    position: relative;
+    padding-top: 60px;
+    margin-bottom: 40px;
+
+    &::before {
+        top: 0;
+        left: 0;
+        width: 100%;
+        content: "";
+        height: 210px;
+        position: absolute;
+        background-color: $background-color;
+    }
+
+    .register-content {
+        position: relative;
+        z-index: 1;
+        padding: 45px 45px 20px 45px;
+        background-color: $white-color;
+        box-shadow: -3.285px 20.741px 51px 0px rgba(0, 0, 47, 0.1);
+
+        &::before {
+            top: 0;
+            left: 0;
+            width: 70%;
+            z-index: -1;
+            content: "";
+            height: 110%;
+            position: absolute;
+            background-repeat: no-repeat;
+            background-image: url(../img/r-bg.png);
+        }
+
+        .register-img {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .register-text {
+            max-width: 440px;
+
+            h3 {
+                color: $white-color;
+                font-size: 36px;
+                font-weight: 700;
+                line-height: 1.167;
+                padding-bottom: 20px;
+
+                span {
+                    color: $red-color;
+                }
+            }
+
+            p {
+                color: #c6c6c6;
+                padding-bottom: 25px;
+            }
+
+            .course-item {
+                a {
+                    height: 45px;
+                    width: 140px;
+                    line-height: 45px;
+                    background-color: #00a4ff;
+                }
+            }
+        }
+    }
+}
+
+$breakpoint-tablet: 990px;
+
+@media (max-width: $breakpoint-tablet) {
+    .register-content {
+        &::before {
+            width: 100% !important;
+        }
+    }
+
+    .register-img {
+        display: none;
+    }
+}
+
+$breakpoint-tablet: 550px;
+
+@media (max-width: $breakpoint-tablet) {
+    .register-content {
+        padding: 20px 20px 20px 20px !important;
+
+        .register-text {
+            max-width: 450px;
+
+            h3 {
+                font-size: 24px !important;
+            }
+        }
+        .course-btn{
+            a{
+                height: 35px !important;
+                line-height: 35px !important;
+            }
+        }
+    }
+
+}

@@ -324,8 +324,8 @@ $breakpoint-tablet: 1440px;
 @media (max-width: $breakpoint-tablet) {
     .content {
         .intro-img {
-            width: 58%;
-            right: 0;
+            width: 53%;
+            right: 0 !important;
         }
 
         .intro-text {
@@ -340,7 +340,8 @@ $breakpoint-tablet: 1070px;
 @media (max-width: $breakpoint-tablet) {
     .content {
         .intro-img {
-            width: 57% !important;
+            right: 0 !important;
+            width: 44% !important;
             top: 229px !important;
         }
     }

@@ -80,7 +80,7 @@
             left: 0;
             right: 0;
             height: 60px;
-            bottom: 0px;
+            bottom: 36px;
             margin: 0 auto;
             opacity: 0;
             visibility: hidden;
@@ -123,6 +123,17 @@
                 img {
                     filter: grayscale(1);
                 }
+            }
+        }
+    }
+}
+
+$breakpoint-tablet: 1120px;
+@media (max-width: $breakpoint-tablet) {
+    .category-text{
+        h3{
+            a{
+                font-size: 16px !important;
             }
         }
     }
