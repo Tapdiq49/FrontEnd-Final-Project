@@ -40,9 +40,26 @@
 
         }
     }
-
     .contact-form {
         margin-top: 70px;
         margin-bottom: 30px;
+        &.blog-details{
+            margin-top: 0 !important;
+        }
+        form{
+            h3{
+                color: $title-color;
+                font-size: 24px;
+                font-weight: 700;
+                font-family: $secondary-font;
+                text-align: left;
+                padding-bottom: 0 !important;
+            }
+        }
+        input{
+            &.blog-details{
+                width: 250px;
+            }
+        }
     }
 }
