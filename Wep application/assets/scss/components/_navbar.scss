@@ -319,6 +319,15 @@ $breakpoint-tablet: 1000px;
                             width: 0;
                         }
                     }
+                    .nav-submenu{
+                        width: 100% !important;
+                        background-color: $title-color !important;
+                        li{
+                            a{
+                                color: $white-color !important;
+                            }
+                        }
+                    }
                 }
             }
 

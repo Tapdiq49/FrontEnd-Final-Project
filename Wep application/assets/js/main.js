@@ -78,5 +78,17 @@ $(document).ready(function () {
                 items: 3
             }
         }
-    })
+    });
+
+    $('[data-fancybox="galerry"]').fancybox({
+        
+        youtube : {
+            autoplay: false
+        },
+        buttons: [
+            "share",
+            "fullScreen",
+            "close"
+        ]
+    });
 });
