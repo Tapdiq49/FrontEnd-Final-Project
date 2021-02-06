@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <script src="https://kit.fontawesome.com/18576e4dba.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="assets/img/download.png">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <title>Course details</title>
+</head>
+
+<body class="loaded">
+
+    <!-- Start of loader -->
+    <div id="loader-wrapper">
+        <div id="loader">
+            <div class="preloader"></div>
+        </div>
+    </div>
+    <!-- End of loader -->
+
+    <!-- Start of header -->
+    <header class="header-navbar">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/logos/logo1.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="navbar-menus">
+                    <i class="close-button d-lg-none fas fa-times"></i>
+                    <div class="m-brand-logo text-center">
+                        <a href="#"><img src="assets/img/logos/logo4.png" alt=""></a>
+                    </div>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item has-children plus">
+                            <a class="nav-link hover" href="index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item has-children plus">
+                            <a class="nav-link hover" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item has-children">
+                            <a class="nav-link hover" href="#">
+                                Course
+                            </a>
+                            <ul class="nav-submenu">
+                                <li><a href="course.html">Course</a></li>
+                                <li><a href="course-details.html">Course Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item has-children">
+                            <a class="nav-link hover" href="#">
+                                Pages
+                            </a>
+                            <ul class="nav-submenu">
+                                <li><a href="#">Gallery</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="#">Event</a></li>
+                                <li><a href="#">Event Details</a></li>
+                                <li><a href="#">Faq</a></li>
+                                <li><a href="#">404</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item has-children">
+                            <a class="nav-link hover" href="#">
+                                Blog
+                            </a>
+                            <ul class="nav-submenu">
+                                <li><a href="blog1.html">Blog</a></li>
+                                <li><a href="blog-details.html">Blog Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item has-children">
+                            <a class="nav-link hover" href="#">
+                                Instructor
+                            </a>
+                            <ul class="nav-submenu">
+                                <li><a href="instructor.html">Instructor</a></li>
+                                <li><a href="instructor-detail.html">Instructor Details</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav-actions">
+                        <li class="shopping-cart">
+                            <button><i class="icon-shopping-cart"></i></button>
+                        </li>
+                        <li class="login" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <a href="#">
+                                <i class="icon-user"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-overlay-panel"></div>
+            </div>
+        </nav>
+    </header>
+    <!-- End of header -->
+
+    <main>
+        <!-- Start of breadcrumb section -->
+        <section id="breadcrumb">
+            <span class="breadcrumb-overlay"></span>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="content">
+                            <h2>Javascript - From Beginner to Pro-Build real world JS apps</h2>
+                            <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                    <i class="icon-double_arrow"></i>
+                                    <li class="breadcrumb-item active" aria-current="page">Courses Details</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of breadcrumb section -->
+
+        <!-- Start of course-details section -->
+        <section id="course-details">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <div class="course-details-content">
+                            <div class="course-details-img">
+                                <img src="assets/img/cd-bg.jpg" alt="">
+                            </div>
+                            <div class="course-details-tab">
+                                <div class="course-details-btn">
+                                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                                href="#pills-overview" role="tab" aria-controls="pills-overview"
+                                                aria-selected="true">Overview</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                                href="#pills-curriculum" role="tab" aria-controls="pills-curriculum"
+                                                aria-selected="false">Curriculum</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                                href="#pills-instructor" role="tab" aria-controls="pills-instructor"
+                                                aria-selected="false">Instructor</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                                href="#pills-reviews" role="tab" aria-controls="pills-reviews"
+                                                aria-selected="false">Reviews</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                                href="#pills-offline" role="tab" aria-controls="pills-offline"
+                                                aria-selected="false">View Offline</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="course-details-tap-content">
+                                    <div class="tab-content" id="pills-tabContent">
+                                        <div class="tab-pane fade show active" id="pills-overview" role="tabpanel"
+                                            aria-labelledby="pills-home-tab">
+                                            <div class="overview">
+                                                <div class="overview-text">
+                                                    <h3 class="overview-title">Course details</h3>
+                                                    <p>Python—the popular and highly readable object-oriented
+                                                        language—is both powerful and relatively easy to learn. Whether
+                                                        you're new to programming or an experienced developer, this
+                                                        course can help you get started with Python. Joe Marini provides
+                                                        an overview of the installation process, basic Python syntax,
+                                                        and an example of how to construct and run a simple Python
+                                                        program. Learn to work with dates and times, read and write
+                                                        files, and retrieve and parse HTML, JSON, and XML data from the
+                                                        web.</p>
+                                                </div>
+                                                <div class="overview-course">
+                                                    <h3 class="overview-title">This Is What our Courses Are Like</h3>
+                                                    <div class="overview-list">
+                                                        <div class="overview-feature-icon-text">
+                                                            <div class="overview-feature-icon-title">
+                                                                <img src="assets/img/course-details/cd-i-1.png" alt="">
+                                                                <h3><a href="#">Learn at Your Own Pace</a></h3>
+                                                            </div>
+                                                            <div class="overview-feature-text">
+                                                                <p>Enjoy learning from home without a set schedule. You
+                                                                    set your own timetable.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="overview-feature-icon-text">
+                                                            <div class="overview-feature-icon-title">
+                                                                <img src="assets/img/course-details/cd-i-2.png" alt="">
+                                                                <h3><a href="#">Learn From the Best</a></h3>
+                                                            </div>
+                                                            <div class="overview-feature-text">
+                                                                <p>Learn valuable methods and techniques explained by
+                                                                    top experts in the creative sector..</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="overview-feature-icon-text">
+                                                            <div class="overview-feature-icon-title">
+                                                                <img src="assets/img/course-details/cd-i-3.png" alt="">
+                                                                <h3><a href="#">Certificate</a></h3>
+                                                            </div>
+                                                            <div class="overview-feature-text">
+                                                                <p class="mb-0">Demonstrate your course attendance with
+                                                                    a certificate signed by the teacher. Get it with
+                                                                    your</p>
+                                                                <a href="#">Domestika PRO subscription</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="overview-feature-icon-text">
+                                                            <div class="overview-feature-icon-title">
+                                                                <img src="assets/img/course-details/cd-i-4.png" alt="">
+                                                                <h3><a href="#">Share Knowledge</a></h3>
+                                                            </div>
+                                                            <div class="overview-feature-text">
+                                                                <p>Enjoy learning from home without a set schedule. You
+                                                                    set your own timetable.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="overview-feature-icon-text">
+                                                            <div class="overview-feature-icon-title">
+                                                                <img src="assets/img/course-details/cd-i-5.png" alt="">
+                                                                <h3><a href="#">Creative Community</a></h3>
+                                                            </div>
+                                                            <div class="overview-feature-text">
+                                                                <p>Enjoy learning from home without a set schedule. You
+                                                                    set your own timetable.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="overview-feature-icon-text">
+                                                            <div class="overview-feature-icon-title">
+                                                                <img src="assets/img/course-details/cd-i-6.png" alt="">
+                                                                <h3><a href="#">Professionally Developed Courses</a>
+                                                                </h3>
+                                                            </div>
+                                                            <div class="overview-feature-text">
+                                                                <p>Enjoy learning from home without a set schedule. You
+                                                                    set your own timetable.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-curriculum" role="tabpanel"
+                                            aria-labelledby="pills-profile-tab">
+                                            <div class="curriculum">
+                                                <div class="curriculum-top">
+                                                    <h3 class="overview-title">Course Curriculum </h3>
+                                                    <div class="curriculum-time">
+                                                        <span>205 Lesson</span>
+                                                        <span>7hr 30min</span>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion" id="accordionExample">
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingOne">
+                                                            <button class="accordion-button" type="button"
+                                                                data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                                aria-expanded="true" aria-controls="collapseOne">
+                                                                <h3>Intorduction</h3>
+                                                                <div class="curriculum-time">
+                                                                    <span>205 Lesson</span>
+                                                                    <span>7hr 30min</span>
+                                                                </div>
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapseOne" class="accordion-collapse collapse show"
+                                                            aria-labelledby="headingOne"
+                                                            data-bs-parent="#accordionExample">
+                                                            <div class="accordion-body">
+                                                                <ul>
+                                                                    <li>
+                                                                        <div class="left">
+                                                                            <i class="icon-play"></i> <a href="#">Duis
+                                                                                aute irure dolor in reprehenderit in vol
+                                                                                um </a>
+                                                                        </div>
+                                                                        <div class="right">
+                                                                            <span class="acc-title"><a
+                                                                                    href="#">Preview</a></span>
+                                                                            <span class="acc-time">21min</span>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="left">
+                                                                            <i class="far fa-file-pdf"></i><a href="#">
+                                                                                dolore eu fugiat nulla pariat cepteur
+                                                                                sint oident </a>
+                                                                        </div>
+                                                                        <div class="right">
+                                                                            <span class="acc-title"><a href="#">
+                                                                                    Download</a></span>
+                                                                            <span class="acc-time"> 5 Pages</span>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li class="border-none">
+                                                                        <div class="left">
+                                                                            <i class="icon-play"></i> <a href="#">
+                                                                                officia deserunt moyllit anim id est
+                                                                                laborum iciatis unde omnis </a>
+                                                                        </div>
+                                                                        <div class="right">
+                                                                            <span class="acc-time">12min</span>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingTwo">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                                <h3>Getting started with Javascript</h3>
+                                                                <div class="curriculum-time">
+                                                                    <span>205 Lesson</span>
+                                                                    <span>7hr 30min</span>
+                                                                </div>
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapseTwo" class="accordion-collapse collapse"
+                                                            aria-labelledby="headingTwo"
+                                                            data-bs-parent="#accordionExample">
+                                                            <div class="accordion-body">
+                                                                <ul>
+                                                                    <li>
+                                                                        <div class="left">
+                                                                            <i class="icon-play"></i> <a href="#">Duis
+                                                                                aute irure dolor in reprehenderit in vol
+                                                                                um </a>
+                                                                        </div>
+                                                                        <div class="right">
+                                                                            <span class="acc-title"><a
+                                                                                    href="#">Preview</a></span>
+                                                                            <span class="acc-time">21min</span>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="left">
+                                                                            <i class="far fa-file-pdf"></i><a href="#">
+                                                                                dolore eu fugiat nulla pariat cepteur
+                                                                                sint oident </a>
+                                                                        </div>
+                                                                        <div class="right">
+                                                                            <span class="acc-title"><a href="#">
+                                                                                    Download</a></span>
+                                                                            <span class="acc-time"> 5 Pages</span>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li class="border-none">
+                                                                        <div class="left">
+                                                                            <i class="icon-play"></i> <a href="#">
+                                                                                officia deserunt moyllit anim id est
+                                                                                laborum iciatis unde omnis </a>
+                                                                        </div>
+                                                                        <div class="right">
+                                                                            <span class="acc-time">12min</span>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingThree">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#collapseThree" aria-expanded="false"
+                                                                aria-controls="collapseTwo">
+                                                                <h3>Jasvascript variables and data types</h3>
+                                                                <div class="curriculum-time">
+                                                                    <span>205 Lesson</span>
+                                                                    <span>7hr 30min</span>
+                                                                </div>
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapseThree" class="accordion-collapse collapse"
+                                                            aria-labelledby="headingThree"
+                                                            data-bs-parent="#accordionExample">
+                                                            <div class="accordion-body">
+                                                                Lorem Ipsum is simply dummy text of the printing and
+                                                                typesetting industry. Robion has been the industry's
+                                                                standard dummy text ever since the 1500s, when an
+                                                                unknown printer took a galley of type and scrambled it
+                                                                to make a type specimen book.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingThird">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#collapseThird" aria-expanded="false"
+                                                                aria-controls="collapseThird">
+                                                                <h3>Operator and modulus in Javascript</h3>
+                                                                <div class="curriculum-time">
+                                                                    <span>205 Lesson</span>
+                                                                    <span>7hr 30min</span>
+                                                                </div>
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapseThird" class="accordion-collapse collapse"
+                                                            aria-labelledby="headingTwo"
+                                                            data-bs-parent="#accordionExample">
+                                                            <div class="accordion-body">
+                                                                <ul>
+                                                                    <li>
+                                                                        <div class="left">
+                                                                            <i class="icon-play"></i> <a href="#">Duis
+                                                                                aute irure dolor in reprehenderit in vol
+                                                                                um </a>
+                                                                        </div>
+                                                                        <div class="right">
+                                                                            <span class="acc-title"><a
+                                                                                    href="#">Preview</a></span>
+                                                                            <span class="acc-time">21min</span>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="left">
+                                                                            <i class="far fa-file-pdf"></i><a href="#">
+                                                                                dolore eu fugiat nulla pariat cepteur
+                                                                                sint oident </a>
+                                                                        </div>
+                                                                        <div class="right">
+                                                                            <span class="acc-title"><a href="#">
+                                                                                    Download</a></span>
+                                                                            <span class="acc-time"> 5 Pages</span>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li class="border-none">
+                                                                        <div class="left">
+                                                                            <i class="icon-play"></i> <a href="#">
+                                                                                officia deserunt moyllit anim id est
+                                                                                laborum iciatis unde omnis </a>
+                                                                        </div>
+                                                                        <div class="right">
+                                                                            <span class="acc-time">12min</span>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingFive">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                                <h3>Javascript project: Makinga video game</h3>
+                                                                <div class="curriculum-time">
+                                                                    <span>205 Lesson</span>
+                                                                    <span>7hr 30min</span>
+                                                                </div>
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapseFive" class="accordion-collapse collapse"
+                                                            aria-labelledby="headingFive"
+                                                            data-bs-parent="#accordionExample">
+                                                            <div class="accordion-body">
+                                                                Lorem Ipsum is simply dummy text of the printing and
+                                                                typesetting industry. Robion has been the industry's
+                                                                standard dummy text ever since the 1500s, when an
+                                                                unknown printer took a galley of type and scrambled it
+                                                                to make a type specimen book.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingSix">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                                                aria-expanded="false" aria-controls="collapseSix">
+                                                                <h3>Javascript project: Makinga video game</h3>
+                                                                <div class="curriculum-time">
+                                                                    <span>205 Lesson</span>
+                                                                    <span>7hr 30min</span>
+                                                                </div>
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapseSix" class="accordion-collapse collapse"
+                                                            aria-labelledby="headingSix"
+                                                            data-bs-parent="#accordionExample">
+                                                            <div class="accordion-body">
+                                                                <ul>
+                                                                    <li>
+                                                                        <div class="left">
+                                                                            <i class="icon-play"></i> <a href="#">Duis
+                                                                                aute irure dolor in reprehenderit in vol
+                                                                                um </a>
+                                                                        </div>
+                                                                        <div class="right">
+                                                                            <span class="acc-title"><a
+                                                                                    href="#">Preview</a></span>
+                                                                            <span class="acc-time">21min</span>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="left">
+                                                                            <i class="far fa-file-pdf"></i><a href="#">
+                                                                                dolore eu fugiat nulla pariat cepteur
+                                                                                sint oident </a>
+                                                                        </div>
+                                                                        <div class="right">
+                                                                            <span class="acc-title"><a href="#">
+                                                                                    Download</a></span>
+                                                                            <span class="acc-time"> 5 Pages</span>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li class="border-none">
+                                                                        <div class="left">
+                                                                            <i class="icon-play"></i> <a href="#">
+                                                                                officia deserunt moyllit anim id est
+                                                                                laborum iciatis unde omnis </a>
+                                                                        </div>
+                                                                        <div class="right">
+                                                                            <span class="acc-time">12min</span>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-instructor" role="tabpanel"
+                                            aria-labelledby="pills-contact-tab">
+                                            <div class="instructor">
+                                                <h3 class="overview-title">Course Instructors</h3>
+                                                <div class="instructor-content">
+                                                    <div class="instructor-about">
+                                                        <div class="instructor-img">
+                                                            <img src="assets/img/instructors/cdi.png" alt="">
+                                                        </div>
+                                                        <div class="instructor-text">
+                                                            <h3><a href="#">Peter Parker</a></h3>
+                                                            <div class="instructor-rate">
+                                                                <ul>
+                                                                    <li><i class="icon-star"></i></li>
+                                                                    <li><i class="icon-star"></i></li>
+                                                                    <li><i class="icon-star"></i></li>
+                                                                    <li><i class="icon-star"></i></li>
+                                                                    <li class="unchecked"><i class="icon-star"></i></li>
+                                                                </ul>
+                                                                <span class="review-rate">4.9</span>
+                                                                <span class="total-review">(235 review)</span>
+                                                            </div>
+                                                            <div class="instructor-course-student">
+                                                                <span><i class="fas fa-list-ul"></i> 128 Course</span>
+                                                                <span><i class="fas fa-user"></i> 50000 Students</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="instructor-btn">
+                                                        <a href="instructor-detail.html">All Courses
+                                                            <i class="icon-chevron-right"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="instructor-details">
+                                                    <p>Fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                        proident, sunt in culpa qui officia deserunt mollit anim id est
+                                                        laborum. Sed ut perspiciatis unde omnis iste natus error sit
+                                                        voluptatem accusantium dolore eimque laudantium, totam rem
+                                                        aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                                                        architecto</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-reviews" role="tabpanel"
+                                            aria-labelledby="pills-contact-tab">
+                                            <div class="reviews">
+                                                <h3 class="overview-title">Reviews</h3>
+                                                <div class="reviews-content">
+                                                    <div class="reviews-item">
+                                                        <div class="reviews-img">
+                                                            <img src="assets/img/reviews/cd-r1.jpg" alt="">
+                                                        </div>
+                                                        <div class="course-review-author">
+                                                            <div class="author-item">
+                                                                <div class="review-author">
+                                                                    <h3><a href="#">Sarah Jennifer</a></h3>
+                                                                    <span>December 08, 2020 04.52 pm</span>
+                                                                </div>
+                                                                <div class="course-review-rate">
+                                                                    <ul>
+                                                                        <li><i class="icon-star"></i></li>
+                                                                        <li><i class="icon-star"></i></li>
+                                                                        <li><i class="icon-star"></i></li>
+                                                                        <li><i class="icon-star"></i></li>
+                                                                        <li class="unchecked"><i class="icon-star"></i>
+                                                                        </li>
+                                                                        <span class="ins-review-rate">4.9</span>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="reviews-text">
+                                                                <p>Fugiat nulla pariatur. Excepteur sint occaecat
+                                                                    cupidatat
+                                                                    non proident, sunt in culpa qui officia deserunt
+                                                                    mollit
+                                                                    anim id est laborum. Sed ut perspiciatis unde omnis
+                                                                    iste
+                                                                    natus error sit voluptate maccus antium dolore
+                                                                    eimque
+                                                                    laudantium, totam rem aperiam, eaque ipsa quae.</p>
+                                                                <a class="reply-btn" href="#">Reply</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="reviews-item">
+                                                        <div class="reviews-img">
+                                                            <img src="assets/img/reviews/cd-r2.jpg" alt="">
+                                                        </div>
+                                                        <div class="course-review-author">
+                                                            <div class="author-item">
+                                                                <div class="review-author">
+                                                                    <h3><a href="#">Andrew James</a></h3>
+                                                                    <span>December 08, 2020 04.52 pm</span>
+                                                                </div>
+                                                                <div class="course-review-rate">
+                                                                    <ul>
+                                                                        <li><i class="icon-star"></i></li>
+                                                                        <li><i class="icon-star"></i></li>
+                                                                        <li><i class="icon-star"></i></li>
+                                                                        <li><i class="icon-star"></i></li>
+                                                                        <li class="unchecked"><i class="icon-star"></i>
+                                                                        </li>
+                                                                        <span class="ins-review-rate">4.9</span>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="reviews-text">
+                                                                <p>Fugiat nulla pariatur. Excepteur sint occaecat
+                                                                    cupidatat
+                                                                    non proident, sunt in culpa qui officia deserunt
+                                                                    mollit
+                                                                    anim id est laborum. Sed ut perspiciatis unde omnis
+                                                                    iste
+                                                                    natus error sit voluptate maccus antium dolore
+                                                                    eimque
+                                                                    laudantium, totam rem aperiam, eaque ipsa quae.</p>
+                                                                <a class="reply-btn" href="#">Reply</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="reviews-item">
+                                                        <div class="reviews-img">
+                                                            <img src="assets/img/reviews/cd-r3.jpg" alt="">
+                                                        </div>
+                                                        <div class="course-review-author">
+                                                            <div class="author-item">
+                                                                <div class="review-author">
+                                                                    <h3><a href="#">Gavin Landon</a></h3>
+                                                                    <span>December 08, 2020 04.52 pm</span>
+                                                                </div>
+                                                                <div class="course-review-rate">
+                                                                    <ul>
+                                                                        <li><i class="icon-star"></i></li>
+                                                                        <li><i class="icon-star"></i></li>
+                                                                        <li><i class="icon-star"></i></li>
+                                                                        <li><i class="icon-star"></i></li>
+                                                                        <li class="unchecked"><i class="icon-star"></i>
+                                                                        </li>
+                                                                        <span class="ins-review-rate">4.9</span>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="reviews-text">
+                                                                <p>Fugiat nulla pariatur. Excepteur sint occaecat
+                                                                    cupidatat
+                                                                    non proident, sunt in culpa qui officia deserunt
+                                                                    mollit
+                                                                    anim id est laborum. Sed ut perspiciatis unde omnis
+                                                                    iste
+                                                                    natus error sit voluptate maccus antium dolore
+                                                                    eimque
+                                                                    laudantium, totam rem aperiam, eaque ipsa quae.</p>
+                                                                <a class="reply-btn" href="#">Reply</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="contact-form blog-details">
+                                                    <form class="contact-form-area" action="#">
+                                                        <h3 class="c-overview-title">Add a review</h3>
+                                                        <div class="contact-form-input">
+                                                            <input type="text" placeholder="Your Name*"
+                                                                class="blog-details">
+                                                            <input type="email" placeholder="Your email*"
+                                                                class="blog-details">
+                                                            <input type="text" placeholder="Phone" class="blog-details">
+                                                        </div>
+                                                        <textarea name="#"
+                                                            placeholder="Write your message here*"></textarea>
+                                                        <button type="submit">Submit Now <i
+                                                                class="icon-arrow-right"></i></button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-offline" role="tabpanel"
+                                            aria-labelledby="pills-contact-tab">
+                                            <div class="offline">
+                                                <h3 class="overview-title">Download the full course to view offline
+                                                </h3>
+                                                <p>Python—the popular and highly readable object-oriented language—is
+                                                    both powerful and relatively easy to learn. Whether you're new to
+                                                    programming or an experienced developer, this course can help you
+                                                    get started with Python. Joe Marini provides an overview</p>
+                                                <a class="offline-btn" href="#">Download Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="course-details-widget">
+                            <div class="course-details-video">
+                                <img src="assets/img/cd-v.jpg" alt="">
+                                <a data-fancybox="video" class="video_box"
+                                    href="https://www.youtube.com/watch?v=k7sVO19kVxU"><i class="icon-play"></i></a>
+                            </div>
+                        </div>
+                        <div class="course-table-widget">
+                            <div class="course-table-list">
+                                <div class="course-table-item">
+                                    <span><i class="fas fa-clock"></i> Duration : </span>
+                                    <span>12 week</span>
+                                </div>
+                                <div class="course-table-item">
+                                    <span><i class="fas fa-users"></i> Max Students : </span>
+                                    <span>20</span>
+                                </div>
+                                <div class="course-table-item">
+                                    <span><i class="fas fa-user"></i> Instructor : </span>
+                                    <span>02</span>
+                                </div>
+                                <div class="course-table-item">
+                                    <span><i class="fas fa-file-alt"></i> Quizzes : </span>
+                                    <span>03</span>
+                                </div>
+                                <div class="course-table-item">
+                                    <span><i class="fas fa-paste"></i> Certificate : </span>
+                                    <span>Yes</span>
+                                </div>
+                            </div>
+                            <div class="course-price">
+                                <span>Price: <strong>$39</strong></span>
+                                <a href="#">Buy</a>
+                            </div>
+                        </div>
+                        <div class="course-table-widget">
+                            <div class="course-news-widget">
+                                <h3 class="widget-title">More Courses for you:</h3>
+                                <div class="course-news-item">
+                                    <div class="course-news-img-text">
+                                        <div class="course-news-img">
+                                            <img src="assets//img/course-details/cdnw1.jpg" alt="">
+                                        </div>
+                                        <div class="course-news-text">
+                                            <a href="#">Python Bootcamp Zero to Hero</a>
+                                            <span>$39</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="course-news-item">
+                                    <div class="course-news-img-text">
+                                        <div class="course-news-img">
+                                            <img src="assets//img/course-details/cdnw2.jpg" alt="">
+                                        </div>
+                                        <div class="course-news-text">
+                                            <a href="#">New Way Learn Piano</a>
+                                            <span>$39</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="course-news-item">
+                                    <div class="course-news-img-text">
+                                        <div class="course-news-img">
+                                            <img src="assets//img/course-details/cdnw3.jpg" alt="">
+                                        </div>
+                                        <div class="course-news-text">
+                                            <a href="#">Guitar learning for Beginner</a>
+                                            <span>$39</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of course-details section -->
+    </main>
+
+    <!-- Start of footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="content-wrap">
+                        <div class="footer-logo">
+                            <a href="#">
+                                <img src="assets/img/logos/logo5.png" alt="">
+                            </a>
+                        </div>
+                        <p>We work with a passion of taking challenges and creating new ones in advertising sector.</p>
+                        <a class="footer-btn" href="#">About us</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="content-wrap newsletter">
+                        <h3 class="">Newsletter</h3>
+                        <p>Subscribe our newsletter to get our latest update &amp; news </p>
+                        <form action="#">
+                            <input type="email" placeholder="Your mail address">
+                            <button type="submit"><i class="icon-paper-plane"></i></button>
+                        </form>
+                        <div class="footer-social">
+                            <ul>
+                                <li><a href="#"><i class="icon-facebook"></i></a></li>
+                                <li><a href="#"><i class="icon-twitter"></i></a></li>
+                                <li><a href="#"><i class="icon-behance"></i></a></li>
+                                <li><a href="#"><i class="icon-youtube-play"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="content-wrap official-info">
+                        <h3>Official info:</h3>
+                        <ul>
+                            <li>
+                                <i class="icon-map-marker"></i>
+                                <a href="#">30 Commercial Road Fratton, Australia</a>
+                            </li>
+                            <li>
+                                <i class="icon-phone"></i><a href="#">1-888-452-1505</a>
+                            </li>
+                        </ul>
+                        <div class="open-hour">
+                            <span>Open Hours: </span>
+                            <p>Mon - Sat: 8 am - 5 pm, Sunday: CLOSED </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="content-wrap instagram">
+                        <h3>Instagram</h3>
+                        <div class="insta-feed">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/img/instagram/ins1.jpg" alt="">
+                                        <i class="icon-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/img/instagram/ins2.jpg" alt="">
+                                        <i class="icon-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/img/instagram/ins3.jpg" alt="">
+                                        <i class="icon-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/img/instagram/ins4.jpg" alt="">
+                                        <i class="icon-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/img/instagram/ins5.jpg" alt="">
+                                        <i class="icon-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/img/instagram/ins6.jpg" alt="">
+                                        <i class="icon-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <span>© 2021 Yle - Education. All rights reserved.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End of footer -->
+
+    <!-- Start of modal -->
+    <div class="modal login-modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header" data-background="assets/img/banner/lg-bg.jpg">
+                    <div class="modal-login-head" id="exampleModalLabel">
+                        <div class="login-head pera-content">
+                            <a href="#"><img src="assets/img/logos/logo4.png" alt=""></a>
+                            <p>Boamco laboris nisi ut aliquip ex ea commodo conseq nderit in voluptate velit esse</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="signup-login-tab">
+                        <ul class="nav nav-pills mb-5 justify-content-center" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home"
+                                    role="tab" aria-controls="pills-home" aria-selected="true">Login</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile"
+                                    role="tab" aria-controls="pills-profile" aria-selected="false">Sign up</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab">
+                                <div id="login" class="tab-pane fade active show">
+                                    <div class="login-content pera-content text-center">
+                                        <form action="#" method="post">
+                                            <input type="text" placeholder="Username or email">
+                                            <input type="text" placeholder="Password">
+                                            <div class="login-label">
+                                                <label for="form">
+                                                    <input type="checkbox" id="form">Remember me
+                                                </label>
+                                                <a href="#">Forget Password?</a>
+                                            </div>
+                                            <button class="submit" type="submit">Submit</button>
+                                        </form>
+                                        <p>Don’t have any account? <a href="#">Signup</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab">
+                                <div id="signUp" class="tab-pane fade active show">
+                                    <div class="sign-up-content pera-content text-center">
+                                        <form action="#" method="post">
+                                            <input type="text" placeholder="First Name">
+                                            <input type="text" placeholder="Last Name">
+                                            <input type="email" placeholder="Email address">
+                                            <input type="text" placeholder="Username">
+                                            <input type="text" placeholder="Password">
+                                            <input type="text" placeholder="Confirm password">
+                                            <div class="login-label clearfix">
+                                                <label><input type="checkbox">By clicking signup you are agree to our
+                                                    terms of service</label>
+                                            </div>
+                                            <button class="submit" type="submit">Submit</button>
+                                        </form>
+                                        <p>Already have an account? <a href="#">Log in</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of modal -->
+
+    <a id="back2Top" class="top-scroll" title="Back to top" href="#"><i class="icon-chevron-up"></i></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="assets/js/typer.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

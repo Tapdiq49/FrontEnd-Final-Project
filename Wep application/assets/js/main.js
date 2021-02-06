@@ -80,7 +80,7 @@ $(document).ready(function () {
         }
     });
 
-    $('[data-fancybox="galerry"]').fancybox({
+    $('[data-fancybox="video"]').fancybox({
         
         youtube : {
             autoplay: false

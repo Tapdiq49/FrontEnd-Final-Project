@@ -46,10 +46,6 @@
                         transition: 0.3s all ease-in-out;
                         overflow: hidden;
                     }
-
-                    &.hover:hover::after {
-                        width: 6px;
-                    }
                 }
 
                 &.has-children {
@@ -130,10 +126,20 @@
 
                     }
 
-                    &:hover .nav-submenu {
-                        top: 48px;
-                        opacity: 1;
-                        visibility: visible;
+                    &:hover {
+                        .nav-submenu {
+                            top: 48px;
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                        &::after{
+                            content: '-';
+                        }
+                        .nav-link{
+                            &.hover::after{
+                                width: 6px;
+                            }
+                        }
                     }
                 }
 

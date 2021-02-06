@@ -21,6 +21,10 @@ h2 {
     font-family: $secondary-font;
 }
 
+section{
+    overflow: hidden;
+}
+
 #loader-wrapper .preloader {
     position: fixed;
     left: 0;
@@ -257,6 +261,7 @@ h2 {
             border-radius: 8px;
             font-weight: 700;
             background-color: $secondary-color;
+            transition: all .4s linear;
             position: relative;
 
             i {
@@ -264,6 +269,9 @@ h2 {
                 position: absolute;
                 top: 50%;
                 transform: translateY(-50%);
+            }
+            &:hover{
+                background-color: $red-color;
             }
         }
     }
