@@ -11,7 +11,6 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
-    <script src="https://kit.fontawesome.com/18576e4dba.js" crossorigin="anonymous"></script>
     <link rel="icon" href="assets/img/download.png">
     <link rel="stylesheet" href="assets/css/style.min.css">
     <title>Course details</title>
@@ -70,7 +69,7 @@
                                 <li><a href="#">Event</a></li>
                                 <li><a href="#">Event Details</a></li>
                                 <li><a href="#">Faq</a></li>
-                                <li><a href="#">404</a></li>
+                                <li><a href="not-found.html">404</a></li>
                             </ul>
                         </li>
                         <li class="nav-item has-children">
@@ -300,7 +299,7 @@
                                                                     </li>
                                                                     <li>
                                                                         <div class="left">
-                                                                            <i class="far fa-file-pdf"></i><a href="#">
+                                                                            <i class="icon-file"></i><a href="#">
                                                                                 dolore eu fugiat nulla pariat cepteur
                                                                                 sint oident </a>
                                                                         </div>
@@ -355,7 +354,7 @@
                                                                     </li>
                                                                     <li>
                                                                         <div class="left">
-                                                                            <i class="far fa-file-pdf"></i><a href="#">
+                                                                            <i class="icon-file"></i><a href="#">
                                                                                 dolore eu fugiat nulla pariat cepteur
                                                                                 sint oident </a>
                                                                         </div>
@@ -436,7 +435,7 @@
                                                                     </li>
                                                                     <li>
                                                                         <div class="left">
-                                                                            <i class="far fa-file-pdf"></i><a href="#">
+                                                                            <i class="icon-file"></i><a href="#">
                                                                                 dolore eu fugiat nulla pariat cepteur
                                                                                 sint oident </a>
                                                                         </div>
@@ -515,7 +514,7 @@
                                                                     </li>
                                                                     <li>
                                                                         <div class="left">
-                                                                            <i class="far fa-file-pdf"></i><a href="#">
+                                                                            <i class="icon-file"></i><a href="#">
                                                                                 dolore eu fugiat nulla pariat cepteur
                                                                                 sint oident </a>
                                                                         </div>
@@ -925,7 +924,7 @@
     <!-- End of footer -->
 
     <!-- Start of modal -->
-    <div class="modal login-modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal login-modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true" style="padding-right: 0 !important;">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header" data-background="assets/img/banner/lg-bg.jpg">
@@ -933,6 +932,7 @@
                         <div class="login-head pera-content">
                             <a href="#"><img src="assets/img/logos/logo4.png" alt=""></a>
                             <p>Boamco laboris nisi ut aliquip ex ea commodo conseq nderit in voluptate velit esse</p>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                     </div>
                 </div>
@@ -972,22 +972,21 @@
                                 aria-labelledby="pills-profile-tab">
                                 <div id="signUp" class="tab-pane fade active show">
                                     <div class="sign-up-content pera-content text-center">
-                                        <form action="#" method="post">
-                                            <input type="text" placeholder="First Name">
-                                            <input type="text" placeholder="Last Name">
-                                            <input type="email" placeholder="Email address">
-                                            <input type="text" placeholder="Username">
-                                            <input type="text" placeholder="Password">
-                                            <input type="text" placeholder="Confirm password">
-                                            <div class="login-label clearfix">
-                                                <label><input type="checkbox">By clicking signup you are agree to our
-                                                    terms of service</label>
-                                            </div>
-                                            <button class="submit" type="submit">Submit</button>
-                                        </form>
-                                        <p>Already have an account? <a href="#">Log in</a></p>
+                                       <form action="#" method="post">
+                                          <input type="text" placeholder="First Name">
+                                          <input type="text" placeholder="Last Name">
+                                          <input type="email" placeholder="Email address">
+                                          <input type="text" placeholder="Username">
+                                          <input type="text" placeholder="Password">
+                                          <input type="text" placeholder="Confirm password">
+                                          <div class="login-label clearfix">
+                                             <label><input type="checkbox">By clicking signup you are agree to our terms of service</label>
+                                          </div>
+                                          <button class="submit" type="submit">Submit</button>
+                                       </form>
+                                       <p>Already have an account? <a href="#">Log in</a></p>
                                     </div>
-                                </div>
+                                 </div>
                             </div>
                         </div>
                     </div>
