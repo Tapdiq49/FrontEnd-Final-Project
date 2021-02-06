@@ -42,6 +42,9 @@
                     }
                 }
             }
+            .btn-close{
+                display: none;
+            }
         }
 
         .modal-body {
@@ -166,6 +169,43 @@
                     float: left;
                     color: #555555;
                 }
+            }
+        }
+    }
+}
+
+$breakpoint-tablet: 1000px;
+
+@media (max-width: $breakpoint-tablet) {
+    .modal-dialog{
+        max-width: 502px !important;
+    }
+    .btn-close{
+        display: block !important;
+        position: absolute;
+        top: 11px;
+        right: 15px;
+    }
+}
+
+$breakpoint-tablet: 570px;
+
+@media (max-width: $breakpoint-tablet) {
+    .modal{
+        &.show{
+            padding-right: 0 !important;
+        }
+    }
+    .sign-up-content{
+        input{
+            width: 100% !important;
+        }
+    }
+    .login-label{
+        flex-wrap: wrap;
+        label{
+            input{
+                width: auto !important;
             }
         }
     }

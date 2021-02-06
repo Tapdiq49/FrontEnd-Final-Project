@@ -132,11 +132,13 @@
                             opacity: 1;
                             visibility: visible;
                         }
-                        &::after{
+
+                        &::after {
                             content: '-';
                         }
-                        .nav-link{
-                            &.hover::after{
+
+                        .nav-link {
+                            &.hover::after {
                                 width: 6px;
                             }
                         }
@@ -307,8 +309,9 @@ $breakpoint-tablet: 1000px;
 
                     &.has-children {
                         .nav-link {
-                            &:hover::after {
-                                width: 0;
+                            &.hover::after {
+                                display: none;
+
                             }
                         }
 
@@ -322,15 +325,25 @@ $breakpoint-tablet: 1000px;
                         }
 
                         &:hover::before {
-                            width: 0;
+                            display: none;
+                        }
+
+                        &:hover::after {
+                            content: '\e904';
+
                         }
                     }
-                    .nav-submenu{
+
+                    .nav-submenu {
                         width: 100% !important;
                         background-color: $title-color !important;
-                        li{
-                            a{
+
+                        li {
+                            a {
                                 color: $white-color !important;
+                                font-size: 11px !important;
+                                padding-left: 20px !important;
+                                display: inline-block !important;
                             }
                         }
                     }
@@ -338,7 +351,20 @@ $breakpoint-tablet: 1000px;
             }
 
             .nav-actions {
-                display: none;
+                text-align: center !important;
+                justify-content: flex-start !important;
+                margin-top: 20px;
+                position: absolute;
+                top: -5px;
+                left: 34px;
+
+                &::after {
+                    display: none;
+                }
+
+                .shopping-cart {
+                    display: none;
+                }
             }
         }
     }

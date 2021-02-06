@@ -91,4 +91,6 @@ $(document).ready(function () {
             "close"
         ]
     });
+
+    new WOW().init();
 });
