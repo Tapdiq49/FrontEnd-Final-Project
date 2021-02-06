@@ -81,8 +81,8 @@ $(document).ready(function () {
     });
 
     $('[data-fancybox="video"]').fancybox({
-        
-        youtube : {
+
+        youtube: {
             autoplay: false
         },
         buttons: [
@@ -91,6 +91,4 @@ $(document).ready(function () {
             "close"
         ]
     });
-
-    new WOW().init();
 });
