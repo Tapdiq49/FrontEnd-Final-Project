@@ -50,6 +50,7 @@
         .instructor-rate {
             margin-bottom: 10px;
             display: flex;
+            flex-wrap: wrap;
 
             ul {
                 display: flex;
@@ -672,7 +673,22 @@ $breakpoint-tablet: 680px;
             }
         }
     }
-
+    .instructor{
+        .instructor-content{
+            flex-direction: column;
+            .instructor-btn{
+                height: 37px !important;
+                width: 125px !important;
+                a{
+                    line-height: 32px;
+                    i{
+                        top: 53% !important;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
     .reviews {
         .course-review-author {
             max-width: 72% !important;
