@@ -1,0 +1,113 @@
+#event-details {
+    padding: 120px 0px 10px;
+    background-color: $background-color;
+
+    .event-details-content {
+
+        .event-details-left {
+            background-color: $white-color;
+            margin-bottom: 60px;
+
+            .event-details-img {
+                img {
+                    width: 1500px;
+                    max-width: 100%;
+                }
+            }
+
+            .event-details-text {
+                padding: 40px 40px 10px 40px;
+
+                h3 {
+                    color: $title-color;
+                    font-size: 24px;
+                    font-weight: 700;
+                    padding-bottom: 15px;
+                    margin-bottom: 0;
+                    font-family: $secondary-font;
+                }
+
+                p {
+                    padding-bottom: 30px;
+                }
+            }
+        }
+
+        .event-details-right {
+
+            .event-details-widget {
+                padding: 35px;
+                border-radius: 5px;
+                margin-bottom: 40px;
+                background-color: $white-color;
+
+                .widget-title {
+                    color: $title-color;
+                    font-size: 20px;
+                    font-weight: 700;
+                    padding-bottom: 20px;
+                    margin-bottom: 0;
+                    font-family: $secondary-font;
+                }
+
+                .ed-inner-widget {
+                    margin-bottom: 15px;
+                    padding-bottom: 10px;
+                    border-bottom: 1px solid #eef1fe;
+
+                    .ed-inner-title {
+                        color: $title-color;
+                        font-size: 16px;
+                        font-weight: 700;
+
+                        i {
+                            color: $red-color;
+                            margin-right: 8px;
+                        }
+                    }
+
+                    span {
+                        color: $title-color;
+                        padding-left: 25px;
+                        display: inline-block;
+                    }
+
+                    b {
+                        color: $red-color;
+                        font-size: 24px;
+                        line-height: 1;
+                        padding-left: 20px;
+                    }
+                    &:last-child {
+                        border-bottom: none;
+                        margin-bottom: 0;
+                    }
+                }
+
+                .ed-book-btn {
+                    width: 100%;
+                    color: $white-color;
+                    height: 45px;
+                    margin-top: 20px;
+                    font-weight: 700;
+                    line-height: 45px;
+                    border-radius: 4px;
+                    display: inline-block;
+                    background-color: $secondary-color;
+                    transition: all .4s linear;
+                    text-align: center;
+
+                    &:hover {
+                        background-color: $red-color;
+                    }
+                }
+
+
+            }
+        }
+    }
+}
+
+.event-details-section {
+    padding: 35px 0 !important;
+}

@@ -3,6 +3,16 @@
     background-color: $background-color;
 
     .event-content {
+        .header-content {
+            h3{
+                color: $title-color;
+                font-size: 36px;
+                font-weight: 700;
+                padding-bottom: 25px;
+                margin-bottom: 0;
+                font-family: $secondary-font;
+            }
+        }
         .events-item {
             border-radius: 8px;
             margin-bottom: 30px;
@@ -109,9 +119,11 @@
                 font-weight: 700;
                 transition: 0.3s all ease-in-out;
             }
-            &:hover{
+
+            &:hover {
                 background-color: $secondary-color;
-                a{
+
+                a {
                     color: $white-color;
                 }
             }
