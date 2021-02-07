@@ -353,6 +353,7 @@ $breakpoint-tablet: 990px;
 @media (max-width: $breakpoint-tablet) {
     .banner-tag{
         background-color: transparent !important;
+        padding-right: 0 !important;
         span{
             margin-top: 15px;
         }
