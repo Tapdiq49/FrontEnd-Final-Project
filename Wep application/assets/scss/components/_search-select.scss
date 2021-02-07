@@ -35,6 +35,39 @@
             display: flex;
             position: relative;
 
+            .select-arrow-1 {
+                position: relative;
+
+                &::after {
+                    content: "\e905";
+                    position: absolute;
+                    left: 116px;
+                    top: 42%;
+                    transform: translateY(-50%);
+                    font-family: 'icomoon';
+                }
+            }
+            .select-arrow-2{
+                &::after {
+                    content: "\e905";
+                    position: absolute;
+                    left: 262px;
+                    top: 42%;
+                    transform: translateY(-50%);
+                    font-family: 'icomoon';
+                }
+            }
+            .select-arrow-3{
+                &::after {
+                    content: "\e905";
+                    position: absolute;
+                    right: 187px;
+                    top: 42%;
+                    transform: translateY(-50%);
+                    font-family: 'icomoon';
+                }
+            }
+
             .form-select {
                 width: 165px;
                 border: none;
@@ -54,7 +87,7 @@
             button {
                 position: relative;
                 color: $white-color;
-                height: 45px;
+                height: 47px;
                 width: 160px;
                 border: none;
                 font-weight: 700;
@@ -63,6 +96,7 @@
                 background-color: $secondary-color;
                 outline: none;
                 z-index: 1;
+
                 &::after {
                     top: 0;
                     width: 0;
@@ -99,21 +133,43 @@
         text-decoration: underline;
     }
 }
+$breakpoint-tablet: 1200px;
+
+@media (max-width: $breakpoint-tablet) {
+    .select-arrow-1{
+        &::after{
+            display: none;
+        }
+    }
+    .select-arrow-2{
+        &::after{
+            display: none;
+        }
+    }
+    .select-arrow-3{
+        &::after{
+            display: none;
+        }
+    }
+}
 
 $breakpoint-tablet: 1000px;
 
 @media (max-width: $breakpoint-tablet) {
-    #select-section{
+    #select-section {
         text-align: center;
-        .search-form{
-            .search-circle1{
+
+        .search-form {
+            .search-circle1 {
                 display: none;
             }
-            .search-circle2{
+
+            .search-circle2 {
                 display: none;
             }
-            form{
-                .select-option{
+
+            form {
+                .select-option {
                     flex-wrap: wrap;
                     justify-content: center;
                 }

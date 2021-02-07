@@ -42,37 +42,46 @@
                     }
                 }
             }
-            .btn-close{
+
+            .btn-close {
                 display: none;
             }
         }
 
         .modal-body {
             padding: 50px;
-
-
-            .nav-item {
+            .signup-login-tab{
+                text-align: center;
+            }
+            .nav {
+                overflow: hidden;
+                border-radius: 30px;
+                display: inline-block;
                 border: 1px solid #e5e5e5;
 
-                &.left-radius {
-                    border-bottom-left-radius: 30px;
-                    border-top-left-radius: 30px;
-                }
+                .nav-item {
+                    float: left;
 
-                &.right-radius {
-                    border-top-right-radius: 30px;
-                    border-bottom-right-radius: 30px;
-                }
+                    &.left-radius {
+                        border-bottom-left-radius: 30px;
+                        border-top-left-radius: 30px;
+                    }
 
-                .nav-link {
-                    color: $title-color;
-                    font-size: 15px;
-                    font-weight: 700;
-                    padding: 10px 40px;
+                    &.right-radius {
+                        border-top-right-radius: 30px;
+                        border-bottom-right-radius: 30px;
+                    }
 
-                    &.active {
-                        color: $white-color;
-                        background-color: $secondary-color !important;
+                    .nav-link {
+                        color: $title-color;
+                        font-size: 15px;
+                        font-weight: 700;
+                        padding: 10px 40px;
+
+                        &.active {
+                            color: $white-color;
+                            background-color: $secondary-color !important;
+                        }
                     }
                 }
             }
@@ -177,10 +186,11 @@
 $breakpoint-tablet: 1000px;
 
 @media (max-width: $breakpoint-tablet) {
-    .modal-dialog{
+    .modal-dialog {
         max-width: 502px !important;
     }
-    .btn-close{
+
+    .btn-close {
         display: block !important;
         position: absolute;
         top: 11px;
@@ -191,20 +201,23 @@ $breakpoint-tablet: 1000px;
 $breakpoint-tablet: 570px;
 
 @media (max-width: $breakpoint-tablet) {
-    .modal{
-        &.show{
+    .modal {
+        &.show {
             padding-right: 0 !important;
         }
     }
-    .sign-up-content{
-        input{
+
+    .sign-up-content {
+        input {
             width: 100% !important;
         }
     }
-    .login-label{
+
+    .login-label {
         flex-wrap: wrap;
-        label{
-            input{
+
+        label {
+            input {
                 width: auto !important;
             }
         }

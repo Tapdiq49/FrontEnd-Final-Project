@@ -1,0 +1,87 @@
+#faq {
+    padding: 120px 0px;
+
+    .faq-btn {
+        text-align: center;
+        padding-bottom: 45px;
+
+        .nav {
+            justify-content: center;
+        }
+
+        .faq-tab-btn-area {
+            overflow: hidden;
+            border-radius: 30px;
+            display: inline-block;
+            border: 1px solid #e5e5e5;
+
+            .nav-item {
+                display: flex;
+                display: inline-block;
+
+                a {
+                    position: relative;
+                    color: $title-color;
+                    font-size: 15px;
+                    font-weight: 700;
+                    padding: 10px 40px;
+
+                    &.active {
+                        color: $white-color;
+                        background-color: $secondary-color;
+                    }
+
+                    &::after {
+                        top: 0;
+                        right: -2px;
+                        width: 1px;
+                        content: "";
+                        height: 100%;
+                        position: absolute;
+                        background-color: #e5e5e5;
+                    }
+                }
+            }
+        }
+    }
+
+    .faq-que-ans {
+        .faq-que-ans-content {
+            max-width: 530px;
+            margin-bottom: 30px;
+
+            h3 {
+                color: $title-color;
+                font-size: 20px;
+                font-weight: 700;
+                padding-bottom: 16px;
+                margin-bottom: 0;
+                font-family: $secondary-font;
+            }
+            p{
+                color: $primary-color;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+$breakpoint-tablet: 768px;
+@media (max-width: $breakpoint-tablet) {
+    .faq-tab-btn-area{
+        border: none !important;
+        .nav-item{
+            a::after{
+                display: none;
+            }
+        }
+    }
+    .faq-que-ans-content{
+        h3{
+            font-size: 15px !important;
+        }
+        p{
+            font-size: 13px;
+        }
+    }
+}

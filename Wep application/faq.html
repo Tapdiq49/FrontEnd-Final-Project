@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <script src="https://kit.fontawesome.com/18576e4dba.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="assets/img/download.png">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <title>Faq</title>
+</head>
+
+<body class="loaded">
+
+    <!-- Start of loader -->
+    <div id="loader-wrapper">
+        <div id="loader">
+            <div class="preloader"></div>
+        </div>
+    </div>
+    <!-- End of loader -->
+
+    <!-- Start of header -->
+    <header class="header-navbar">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/logos/logo1.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="navbar-menus">
+                    <i class="close-button d-lg-none fas fa-times"></i>
+                    <div class="m-brand-logo text-center">
+                        <a href="#"><img src="assets/img/logos/logo4.png" alt=""></a>
+                    </div>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item has-children plus">
+                            <a class="nav-link hover" href="index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item has-children plus">
+                            <a class="nav-link hover" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item has-children">
+                            <a class="nav-link hover" href="#">
+                                Course
+                            </a>
+                            <ul class="nav-submenu">
+                                <li><a href="course.html">Course</a></li>
+                                <li><a href="course-details.html">Course Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item has-children">
+                            <a class="nav-link hover" href="#">
+                                Pages
+                            </a>
+                            <ul class="nav-submenu">
+                                <li><a href="#">Gallery</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="event.html">Event</a></li>
+                                <li><a href="#">Event Details</a></li>
+                                <li><a href="faq.html">Faq</a></li>
+                                <li><a href="not-found.html">404</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item has-children">
+                            <a class="nav-link hover" href="#">
+                                Blog
+                            </a>
+                            <ul class="nav-submenu">
+                                <li><a href="blog1.html">Blog</a></li>
+                                <li><a href="blog-details.html">Blog Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item has-children">
+                            <a class="nav-link hover" href="#">
+                                Instructor
+                            </a>
+                            <ul class="nav-submenu">
+                                <li><a href="instructor.html">Instructor</a></li>
+                                <li><a href="instructor-detail.html">Instructor Details</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav-actions">
+                        <li class="shopping-cart">
+                            <button><i class="icon-shopping-cart"></i></button>
+                        </li>
+                        <li class="login" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <a href="#">
+                                <i class="icon-user"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-overlay-panel"></div>
+            </div>
+        </nav>
+    </header>
+    <!-- End of header -->
+
+    <main>
+        <!-- Start of breadcrumb section -->
+        <section id="breadcrumb">
+            <span class="breadcrumb-overlay"></span>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="content">
+                            <h2>Frequently Asked Questions</h2>
+                            <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                    <i class="icon-double_arrow"></i>
+                                    <li class="breadcrumb-item active" aria-current="page">FAQ</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of breadcrumb section -->
+
+        <!-- Start of faq section -->
+        <section id="faq">
+            <div class="container">
+                <div class="faq-content">
+                    <div class="faq-btn">
+                        <ul class="nav nav-pills mb-3 faq-tab-btn-area" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                    href="#pills-overview" role="tab" aria-controls="pills-overview"
+                                    aria-selected="true">Admission</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                    href="#pills-curriculum" role="tab" aria-controls="pills-curriculum"
+                                    aria-selected="false">Payments</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                    href="#pills-instructor" role="tab" aria-controls="pills-instructor"
+                                    aria-selected="false">Courses</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" href="#pills-reviews"
+                                    role="tab" aria-controls="pills-reviews" aria-selected="false">Instructors</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" href="#pills-offline"
+                                    role="tab" aria-controls="pills-offline" aria-selected="false">Refunds</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="faq-tap-content">
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-overview" role="tabpanel"
+                                aria-labelledby="pills-home-tab">
+                                <div class="admission">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="faq-que-ans">
+                                                <div class="faq-que-ans-content">
+                                                    <h3>How to take a good course from Yle?</h3>
+                                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                                        officia de serunt mollit anim id est laborum. Sed ut
+                                                        perspiciatis unde omnis iste der natus error sit voluptatem
+                                                        accusantium doloremque laudantium</p>
+                                                </div>
+                                                <div class="faq-que-ans-content">
+                                                    <h3>How to get a discount from Yle?</h3>
+                                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                                        officia de serunt mollit anim id est laborum. Sed ut
+                                                        perspiciatis unde omnis iste der natus error sit voluptatem
+                                                        accusantium doloremque laudantium</p>
+                                                </div>
+                                                <div class="faq-que-ans-content">
+                                                    <h3>How to develop a course management system?</h3>
+                                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                                        officia de serunt mollit anim id est laborum. Sed ut
+                                                        perspiciatis unde omnis iste der natus error sit voluptatem
+                                                        accusantium doloremque laudantium</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="faq-que-ans">
+                                                <div class="faq-que-ans-content">
+                                                    <h3>Why Yle is the best lms template on themeforest?</h3>
+                                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                                        officia de serunt mollit anim id est laborum. Sed ut
+                                                        perspiciatis unde omnis iste der natus error sit voluptatem
+                                                        accusantium doloremque laudantium</p>
+                                                </div>
+                                                <div class="faq-que-ans-content">
+                                                    <h3>How to get a rerund from Yle University?</h3>
+                                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                                        officia de serunt mollit anim id est laborum. Sed ut
+                                                        perspiciatis unde omnis iste der natus error sit voluptatem
+                                                        accusantium doloremque laudantium</p>
+                                                </div>
+                                                <div class="faq-que-ans-content">
+                                                    <h3>What features you expect from Yle?</h3>
+                                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                                        officia de serunt mollit anim id est laborum. Sed ut
+                                                        perspiciatis unde omnis iste der natus error sit voluptatem
+                                                        accusantium doloremque laudantium</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-curriculum" role="tabpanel"
+                                aria-labelledby="pills-profile-tab">
+                                <div class="payments">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="faq-que-ans">
+                                                <div class="faq-que-ans-content">
+                                                    <h3>How to take a good course from Yle?</h3>
+                                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                                        officia de serunt mollit anim id est laborum. Sed ut
+                                                        perspiciatis unde omnis iste der natus error sit voluptatem
+                                                        accusantium doloremque laudantium</p>
+                                                </div>
+                                                <div class="faq-que-ans-content">
+                                                    <h3>How to get a discount from Yle?</h3>
+                                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                                        officia de serunt mollit anim id est laborum. Sed ut
+                                                        perspiciatis unde omnis iste der natus error sit voluptatem
+                                                        accusantium doloremque laudantium</p>
+                                                </div>
+                                                <div class="faq-que-ans-content">
+                                                    <h3>How to develop a course management system?</h3>
+                                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                                        officia de serunt mollit anim id est laborum. Sed ut
+                                                        perspiciatis unde omnis iste der natus error sit voluptatem
+                                                        accusantium doloremque laudantium</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="faq-que-ans">
+                                                <div class="faq-que-ans-content">
+                                                    <h3>Why Yle is the best lms template on themeforest?</h3>
+                                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                                        officia de serunt mollit anim id est laborum. Sed ut
+                                                        perspiciatis unde omnis iste der natus error sit voluptatem
+                                                        accusantium doloremque laudantium</p>
+                                                </div>
+                                                <div class="faq-que-ans-content">
+                                                    <h3>How to get a rerund from Yle University?</h3>
+                                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                                        officia de serunt mollit anim id est laborum. Sed ut
+                                                        perspiciatis unde omnis iste der natus error sit voluptatem
+                                                        accusantium doloremque laudantium</p>
+                                                </div>
+                                                <div class="faq-que-ans-content">
+                                                    <h3>What features you expect from Yle?</h3>
+                                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                                        officia de serunt mollit anim id est laborum. Sed ut
+                                                        perspiciatis unde omnis iste der natus error sit voluptatem
+                                                        accusantium doloremque laudantium</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-instructor" role="tabpanel"
+                                aria-labelledby="pills-contact-tab">
+                                <div class="Courses">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="faq-que-ans">
+                                                <div class="faq-que-ans-content">
+                                                    <h3>How to take a good course from Yle?</h3>
+                                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                                        officia de serunt mollit anim id est laborum. Sed ut
+                                                        perspiciatis unde omnis iste der natus error sit voluptatem
+                                                        accusantium doloremque laudantium</p>
+                                                </div>
+                                                <div class="faq-que-ans-content">
+                                                    <h3>How to get a discount from Yle?</h3>
+                                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                                        officia de serunt mollit anim id est laborum. Sed ut
+                                                        perspiciatis unde omnis iste der natus error sit voluptatem
+                                                        accusantium doloremque laudantium</p>
+                                                </div>
+                                                <div class="faq-que-ans-content">
+                                                    <h3>How to develop a course management system?</h3>
+                                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                                        officia de serunt mollit anim id est laborum. Sed ut
+                                                        perspiciatis unde omnis iste der natus error sit voluptatem
+                                                        accusantium doloremque laudantium</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="faq-que-ans">
+                                                <div class="faq-que-ans-content">
+                                                    <h3>Why Yle is the best lms template on themeforest?</h3>
+                                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                                        officia de serunt mollit anim id est laborum. Sed ut
+                                                        perspiciatis unde omnis iste der natus error sit voluptatem
+                                                        accusantium doloremque laudantium</p>
+                                                </div>
+                                                <div class="faq-que-ans-content">
+                                                    <h3>How to get a rerund from Yle University?</h3>
+                                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                                        officia de serunt mollit anim id est laborum. Sed ut
+                                                        perspiciatis unde omnis iste der natus error sit voluptatem
+                                                        accusantium doloremque laudantium</p>
+                                                </div>
+                                                <div class="faq-que-ans-content">
+                                                    <h3>What features you expect from Yle?</h3>
+                                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                                        officia de serunt mollit anim id est laborum. Sed ut
+                                                        perspiciatis unde omnis iste der natus error sit voluptatem
+                                                        accusantium doloremque laudantium</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-reviews" role="tabpanel"
+                                aria-labelledby="pills-contact-tab">
+                                <div class="instructors">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="faq-que-ans">
+                                                <div class="faq-que-ans-content">
+                                                    <h3>How to take a good course from Yle?</h3>
+                                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                                        officia de serunt mollit anim id est laborum. Sed ut
+                                                        perspiciatis unde omnis iste der natus error sit voluptatem
+                                                        accusantium doloremque laudantium</p>
+                                                </div>
+                                                <div class="faq-que-ans-content">
+                                                    <h3>How to get a discount from Yle?</h3>
+                                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                                        officia de serunt mollit anim id est laborum. Sed ut
+                                                        perspiciatis unde omnis iste der natus error sit voluptatem
+                                                        accusantium doloremque laudantium</p>
+                                                </div>
+                                                <div class="faq-que-ans-content">
+                                                    <h3>How to develop a course management system?</h3>
+                                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                                        officia de serunt mollit anim id est laborum. Sed ut
+                                                        perspiciatis unde omnis iste der natus error sit voluptatem
+                                                        accusantium doloremque laudantium</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="faq-que-ans">
+                                                <div class="faq-que-ans-content">
+                                                    <h3>Why Yle is the best lms template on themeforest?</h3>
+                                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                                        officia de serunt mollit anim id est laborum. Sed ut
+                                                        perspiciatis unde omnis iste der natus error sit voluptatem
+                                                        accusantium doloremque laudantium</p>
+                                                </div>
+                                                <div class="faq-que-ans-content">
+                                                    <h3>How to get a rerund from Yle University?</h3>
+                                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                                        officia de serunt mollit anim id est laborum. Sed ut
+                                                        perspiciatis unde omnis iste der natus error sit voluptatem
+                                                        accusantium doloremque laudantium</p>
+                                                </div>
+                                                <div class="faq-que-ans-content">
+                                                    <h3>What features you expect from Yle?</h3>
+                                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                                        officia de serunt mollit anim id est laborum. Sed ut
+                                                        perspiciatis unde omnis iste der natus error sit voluptatem
+                                                        accusantium doloremque laudantium</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-offline" role="tabpanel"
+                                aria-labelledby="pills-contact-tab">
+                                <div class="Refunds">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="faq-que-ans">
+                                                <div class="faq-que-ans-content">
+                                                    <h3>How to take a good course from Yle?</h3>
+                                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                                        officia de serunt mollit anim id est laborum. Sed ut
+                                                        perspiciatis unde omnis iste der natus error sit voluptatem
+                                                        accusantium doloremque laudantium</p>
+                                                </div>
+                                                <div class="faq-que-ans-content">
+                                                    <h3>How to get a discount from Yle?</h3>
+                                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                                        officia de serunt mollit anim id est laborum. Sed ut
+                                                        perspiciatis unde omnis iste der natus error sit voluptatem
+                                                        accusantium doloremque laudantium</p>
+                                                </div>
+                                                <div class="faq-que-ans-content">
+                                                    <h3>How to develop a course management system?</h3>
+                                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                                        officia de serunt mollit anim id est laborum. Sed ut
+                                                        perspiciatis unde omnis iste der natus error sit voluptatem
+                                                        accusantium doloremque laudantium</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="faq-que-ans">
+                                                <div class="faq-que-ans-content">
+                                                    <h3>Why Yle is the best lms template on themeforest?</h3>
+                                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                                        officia de serunt mollit anim id est laborum. Sed ut
+                                                        perspiciatis unde omnis iste der natus error sit voluptatem
+                                                        accusantium doloremque laudantium</p>
+                                                </div>
+                                                <div class="faq-que-ans-content">
+                                                    <h3>How to get a rerund from Yle University?</h3>
+                                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                                        officia de serunt mollit anim id est laborum. Sed ut
+                                                        perspiciatis unde omnis iste der natus error sit voluptatem
+                                                        accusantium doloremque laudantium</p>
+                                                </div>
+                                                <div class="faq-que-ans-content">
+                                                    <h3>What features you expect from Yle?</h3>
+                                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                                        officia de serunt mollit anim id est laborum. Sed ut
+                                                        perspiciatis unde omnis iste der natus error sit voluptatem
+                                                        accusantium doloremque laudantium</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of faq section -->
+    </main>
+
+    <!-- Start of footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="content-wrap">
+                        <div class="footer-logo">
+                            <a href="#">
+                                <img src="assets/img/logos/logo5.png" alt="">
+                            </a>
+                        </div>
+                        <p>We work with a passion of taking challenges and creating new ones in advertising sector.</p>
+                        <a class="footer-btn" href="#">About us</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="content-wrap newsletter">
+                        <h3 class="">Newsletter</h3>
+                        <p>Subscribe our newsletter to get our latest update &amp; news </p>
+                        <form action="#">
+                            <input type="email" placeholder="Your mail address">
+                            <button type="submit"><i class="icon-paper-plane"></i></button>
+                        </form>
+                        <div class="footer-social">
+                            <ul>
+                                <li><a href="#"><i class="icon-facebook"></i></a></li>
+                                <li><a href="#"><i class="icon-twitter"></i></a></li>
+                                <li><a href="#"><i class="icon-behance"></i></a></li>
+                                <li><a href="#"><i class="icon-youtube-play"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="content-wrap official-info">
+                        <h3>Official info:</h3>
+                        <ul>
+                            <li>
+                                <i class="icon-map-marker"></i>
+                                <a href="#">30 Commercial Road Fratton, Australia</a>
+                            </li>
+                            <li>
+                                <i class="icon-phone"></i><a href="#">1-888-452-1505</a>
+                            </li>
+                        </ul>
+                        <div class="open-hour">
+                            <span>Open Hours: </span>
+                            <p>Mon - Sat: 8 am - 5 pm, Sunday: CLOSED </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="content-wrap instagram">
+                        <h3>Instagram</h3>
+                        <div class="insta-feed">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/img/instagram/ins1.jpg" alt="">
+                                        <i class="icon-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/img/instagram/ins2.jpg" alt="">
+                                        <i class="icon-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/img/instagram/ins3.jpg" alt="">
+                                        <i class="icon-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/img/instagram/ins4.jpg" alt="">
+                                        <i class="icon-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/img/instagram/ins5.jpg" alt="">
+                                        <i class="icon-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/img/instagram/ins6.jpg" alt="">
+                                        <i class="icon-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <span>© 2021 Yle - Education. All rights reserved.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End of footer -->
+
+    <!-- Start of modal -->
+    <div class="modal login-modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true"
+        style="padding-right: 0 !important;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header" data-background="assets/img/banner/lg-bg.jpg">
+                    <div class="modal-login-head" id="exampleModalLabel">
+                        <div class="login-head pera-content">
+                            <a href="#"><img src="assets/img/logos/logo4.png" alt=""></a>
+                            <p>Boamco laboris nisi ut aliquip ex ea commodo conseq nderit in voluptate velit esse</p>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="signup-login-tab">
+                        <ul class="nav nav-pills mb-5 justify-content-center" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home"
+                                    role="tab" aria-controls="pills-home" aria-selected="true">Login</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile"
+                                    role="tab" aria-controls="pills-profile" aria-selected="false">Sign up</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab">
+                                <div id="login" class="tab-pane fade active show">
+                                    <div class="login-content pera-content text-center">
+                                        <form action="#" method="post">
+                                            <input type="text" placeholder="Username or email">
+                                            <input type="text" placeholder="Password">
+                                            <div class="login-label">
+                                                <label for="form">
+                                                    <input type="checkbox" id="form">Remember me
+                                                </label>
+                                                <a href="#">Forget Password?</a>
+                                            </div>
+                                            <button class="submit" type="submit">Submit</button>
+                                        </form>
+                                        <p>Don’t have any account? <a href="#">Signup</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab">
+                                <div id="signUp" class="tab-pane fade active show">
+                                    <div class="sign-up-content pera-content text-center">
+                                        <form action="#" method="post">
+                                            <input type="text" placeholder="First Name">
+                                            <input type="text" placeholder="Last Name">
+                                            <input type="email" placeholder="Email address">
+                                            <input type="text" placeholder="Username">
+                                            <input type="text" placeholder="Password">
+                                            <input type="text" placeholder="Confirm password">
+                                            <div class="login-label clearfix">
+                                                <label><input type="checkbox">By clicking signup you are agree to our
+                                                    terms of service</label>
+                                            </div>
+                                            <button class="submit" type="submit">Submit</button>
+                                        </form>
+                                        <p>Already have an account? <a href="#">Log in</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of modal -->
+
+    <a id="back2Top" class="top-scroll" title="Back to top" href="#"><i class="icon-chevron-up"></i></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="assets/js/typer.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
